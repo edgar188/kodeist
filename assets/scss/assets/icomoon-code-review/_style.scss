@@ -48,5 +48,17 @@
     }
 }
 
+.icon-plus {
+    &:before {
+        content: $icon-plus;
+    }
+}
+
+.icon-arrow-top { 
+    &:before {
+        content: $icon-arrow-top;
+    }
+}
+
 
 

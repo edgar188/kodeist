@@ -143,6 +143,14 @@ body {
   content: "";
 }
 
+.icon-plus:before {
+  content: "";
+}
+
+.icon-arrow-top:before {
+  content: "";
+}
+
 .main {
   display: flex;
 }
