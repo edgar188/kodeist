@@ -19,9 +19,8 @@ body {
 }
 
 .container {
-  width: $perc-max;
+  width: 93%;
   max-width: ($cont-width + $cont-padding);
-  min-width: ($cont-width + $cont-padding);
   padding-left: ($cont-padding / 2);
   padding-right: ($cont-padding / 2);
   margin-left: auto;

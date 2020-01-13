@@ -1,126 +1,14 @@
-.menu {
-    min-height: 100vh;
-    text-align: right;
-    z-index: $z-index-mid;
-    box-shadow: $box-shadow-primary;
-    background-color: $color-bg-primary;
+menu {
+    max-width: 220px;
+    min-width: 220px;
 }
 
-.logo-wrapper {
-    text-align: center;
-    background-color: $color-light;
-}
-
-.logo-link {
-    display: inline-block;
-    margin-top: 48px;
-    margin-bottom: 35px;
-}
-
-.logo {
-    max-width: 117px;
-    max-height: 61px;
-}
-
-.hidden-menu {
-    display: none;
-}
-
-.nav-list {
-    font-size: 1.125em;
-    color: $color-light;
-    text-transform: uppercase;
-}
-
-.nav-item {
-    border-bottom: 1px solid $color-br-primary;
-    background-image: $ln-grad-primary;
-
-    &:hover {
-        background-image: $ln-grad-secondary;
-        border-color: $color-br-secondary;
-    }
-    &.active {
-        background-image: $ln-grad-secondary;
-        border-color: $color-br-secondary;
-        &:hover {
-            color: $color-light;
-        }
-        .nav-link {
-            cursor: default;
+.menu-list {
+    li {
+        a {
+            width: 100%;
+            display: block;
+            cursor: pointer;
         }
     }
 }
-
-.nav-link {
-    @include ofl-ellipsis;
-    display: block;
-}
-
-.filter-wrapper {
-    padding-bottom: 10px;
-    border-bottom: 1px solid $color-br-primary;
-    .inner-head {
-        i {
-            margin-left: 12px;
-        }
-    }
-}
-
-.filter-list {
-    font-size: 0.8125em;
-    text-transform: lowercase;
-}
-
-.filter-item {
-    @include ofl-ellipsis;
-    &.p-5 {
-        padding-bottom: 15px;
-        padding-top: 0;
-    }
-}
-
-.filter-link {
-    &:hover {
-        color: $color-light;
-    }
-    &.active {
-        color: $color-light;
-        text-transform: uppercase;
-        cursor: default;
-    }
-}
-
-.socials-list {
-    color: $color-light;
-    font-size: 1.125em;
-}
-
-.socials-item {
-    display: inline-block;
-    border-radius: $br-default;
-
-    @each $key, $val in $social-colors {
-        &.#{$key} {
-            @if #{$key} == flickr {
-                color: $color-primary;
-            }
-            background-color: $val;
-        }
-    }
-
-    &:hover {
-        opacity: $opacity-primary;
-    }
-    
-    i {
-        padding: 2px;
-        font-size: 1.125em;
-    }
-}
-
-.rights-text {
-    @include ofl-ellipsis; 
-    font-size: 0.75em;
-}
-
