@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "icomoon-kappe";
+  font-family: "icomoon-kodeist";
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/icomoon-kappe/icomoon-kappe.eot");
-  src: url("../assets/fonts/icomoon-kappe/icomoon-kappe.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon-kappe/icomoon-kappe.woff") format("woff"), url("../assets/fonts/icomoon-kappe/icomoon-kappe.ttf") format("truetype"), url("../assets/fonts/icomoon-kappe/icomoon-kappe.svg") format("svg");
+  src: url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.eot");
+  src: url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.woff") format("woff"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.ttf") format("truetype"), url("../assets/fonts/icomoon-kodeist/icomoon-kodeist.svg") format("svg");
 }
 @font-face {
   font-family: "Worksans-medium";
@@ -108,7 +108,7 @@ body {
 
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon-kappe" !important;
+  font-family: "icomoon-kodeist" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -119,68 +119,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-info:before {
-  content: "";
-}
-
-.icon-filter:before {
-  content: "";
-}
-
-.icon-menu:before {
-  content: "";
-}
-
-.icon-arrow-right:before {
-  content: "";
-}
-
-.icon-phone:before {
-  content: "";
-}
-
-.icon-mail:before {
-  content: "";
-}
-
-.icon-home:before {
-  content: "";
-}
-
-.icon-pinterest-circular:before {
-  content: "";
-}
-
-.icon-flickr:before {
+.icon-archive:before {
   content: "";
 }
 
-.icon-pinterest:before {
+.icon-dashboard:before {
   content: "";
 }
 
-.icon-tumbler:before {
+.icon-delete:before {
+  content: "";
+}
+
+.icon-notification:before {
   content: "";
 }
 
-.icon-vimeo:before {
+.icon-settings:before {
   content: "";
 }
 
-.icon-tumbler:before {
-  content: "";
-}
-
-.icon-dribbble:before {
+.icon-statistics:before {
   content: "";
-}
-
-.icon-facebook:before {
-  content: "";
-}
-
-.icon-twitter:before {
-  content: "";
 }
 
 .main {
