@@ -1,8 +1,11 @@
-//icomoon-kappe
+// icomoon-kappe
 @include font-face('icomoon-kappe/icomoon-kappe', $font-icons, normal, 400);
 
-//Roboto Thin
-@include font-face('roboto/roboto_thin/Robotothin', 'Robotothin', normal, 100);
+// Work-Sans Medium
+@include font-face('work-sans/worksans-medium/Worksans-medium', 'Worksans-medium', normal, 500);
 
-//Roboto Light
-@include font-face('roboto/roboto_light/Robotolight', 'Robotolight', normal, 300);
+// Work-Sans SemiBold
+@include font-face('work-sans/worksans-semibold/Worksans-semibold', 'Worksans-semibold', normal, 600);
+
+// Work-Sans Bold
+@include font-face('work-sans/worksans-bold/Worksans-bold', 'Worksans-bold', normal, 700);

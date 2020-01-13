@@ -7,18 +7,25 @@
   src: url("../assets/fonts/icomoon-kappe/icomoon-kappe.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon-kappe/icomoon-kappe.woff") format("woff"), url("../assets/fonts/icomoon-kappe/icomoon-kappe.ttf") format("truetype"), url("../assets/fonts/icomoon-kappe/icomoon-kappe.svg") format("svg");
 }
 @font-face {
-  font-family: "Robotothin";
+  font-family: "Worksans-medium";
   font-style: normal;
-  font-weight: 100;
-  src: url("../assets/fonts/roboto/roboto_thin/Robotothin.eot");
-  src: url("../assets/fonts/roboto/roboto_thin/Robotothin.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto/roboto_thin/Robotothin.woff") format("woff"), url("../assets/fonts/roboto/roboto_thin/Robotothin.ttf") format("truetype"), url("../assets/fonts/roboto/roboto_thin/Robotothin.svg") format("svg");
+  font-weight: 500;
+  src: url("../assets/fonts/work-sans/worksans-medium/Worksans-medium.eot");
+  src: url("../assets/fonts/work-sans/worksans-medium/Worksans-medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/work-sans/worksans-medium/Worksans-medium.woff") format("woff"), url("../assets/fonts/work-sans/worksans-medium/Worksans-medium.ttf") format("truetype"), url("../assets/fonts/work-sans/worksans-medium/Worksans-medium.svg") format("svg");
 }
 @font-face {
-  font-family: "Robotolight";
+  font-family: "Worksans-semibold";
   font-style: normal;
-  font-weight: 300;
-  src: url("../assets/fonts/roboto/roboto_light/Robotolight.eot");
-  src: url("../assets/fonts/roboto/roboto_light/Robotolight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto/roboto_light/Robotolight.woff") format("woff"), url("../assets/fonts/roboto/roboto_light/Robotolight.ttf") format("truetype"), url("../assets/fonts/roboto/roboto_light/Robotolight.svg") format("svg");
+  font-weight: 600;
+  src: url("../assets/fonts/work-sans/worksans-semibold/Worksans-semibold.eot");
+  src: url("../assets/fonts/work-sans/worksans-semibold/Worksans-semibold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/work-sans/worksans-semibold/Worksans-semibold.woff") format("woff"), url("../assets/fonts/work-sans/worksans-semibold/Worksans-semibold.ttf") format("truetype"), url("../assets/fonts/work-sans/worksans-semibold/Worksans-semibold.svg") format("svg");
+}
+@font-face {
+  font-family: "Worksans-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/work-sans/worksans-bold/Worksans-bold.eot");
+  src: url("../assets/fonts/work-sans/worksans-bold/Worksans-bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/work-sans/worksans-bold/Worksans-bold.woff") format("woff"), url("../assets/fonts/work-sans/worksans-bold/Worksans-bold.ttf") format("truetype"), url("../assets/fonts/work-sans/worksans-bold/Worksans-bold.svg") format("svg");
 }
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -78,7 +85,7 @@ html {
 body {
   color: #6b7072;
   font-size: 16px;
-  font-family: "Robotolight", serif;
+  font-family: "Worksans-medium", serif;
   outline: none;
   word-wrap: break-word;
   font-weight: 400;
@@ -97,12 +104,6 @@ body {
   padding-right: 0px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.inner-head {
-  font-size: 1.1875em;
-  font-family: "Robotothin", serif;
-  color: #1ab5b3;
 }
 
 [class^=icon-], [class*=" icon-"] {
