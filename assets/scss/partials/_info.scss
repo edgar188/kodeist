@@ -1,0 +1,62 @@
+.info {
+    @include position(0, 0, null, null, fixed);
+    z-index: $z-index-mid;
+    text-align: right;
+}
+
+.icon-info-wrapper {
+    display: inline-block;
+    background-color: $color-primary;
+    cursor: pointer;
+    &:hover {
+        .btn-info {
+            color: $color-custom;
+            border-color: $color-custom;
+        }
+    }
+}
+
+.btn-info {
+    border: 1px solid $color-light;
+    border-radius: $br-rounded;
+    height: 52px;
+ }
+
+.info-hidden {
+    @include position(null, 0, null, null, inherit);
+    transition: max-height $trns-duration-md;  
+    overflow-y: hidden;
+    max-height: $perc-min;
+    text-align: left;
+    opacity: $opacity-primary;
+    background-color: $color-dark;
+    color: $color-light;
+    &:hover {
+        background-color: $color-bg-primary;
+        opacity: $opacity-default;
+    }
+}
+
+.info-list {
+    padding-left: 18px;
+    padding-right: 80px;
+}
+
+.info-list-open {
+    max-height: 150px;
+}
+
+.info-item {
+    padding-bottom: 20px;
+    i {
+        font-size: 1.25em;
+    }
+    &:first-of-type {
+        padding-top: 20px;
+    }
+}
+
+.info-text {
+    font-size: 1em;
+    margin-left: 12px;
+}

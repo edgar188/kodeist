@@ -1,0 +1,98 @@
+@media (max-width: map-get($resolutions, sm)) {
+ 
+    .p-4 {
+        padding: 10px;
+    }
+
+    // --------------------- Main section ---------------------
+    .main {
+        flex-wrap: wrap;
+    }
+
+    .btn-primary {
+        padding: 10px;
+    }
+
+    // --------------------- Menu section ---------------------
+    .menu {
+        max-width: $perc-max;
+        min-width: unset;
+        min-height: unset;
+        text-align: center;
+    }
+    
+    .logo-link {
+        margin-top: round(48px * map-get($mlp-values, sm));
+        margin-bottom: round(35px * map-get($mlp-values, sm));
+    }
+
+    .hidden-menu {
+        @include position(0, null, null, 0);
+        display: block;
+    }
+
+    .btn-menu {
+        padding: 8px 14px;
+        font-size: 2em;
+        height: 50px;
+        border: $br-none;
+    }
+
+    .navs-wrapper {
+        width: $perc-min;
+        height: $perc-min;
+        overflow-x: hidden;
+        transition: width $trns-duration-md;
+    }
+
+    .navs-open {
+        width: $perc-max;
+        height: $perc-max;
+    }
+    
+    .filter-list {
+        font-size: 0.9em;
+    }
+
+    .filter-item {
+        display: inline-block;
+        @media (max-width: 570px) {
+            display: block;
+        }
+    }
+
+    .socials-wrapper {
+        @include position(null, null, 0);
+        width: $perc-max;
+        background-color: $color-bg-primary; 
+    }
+
+    // --------------------- Home section ---------------------
+
+    .home {
+        width: 100%;
+        font-size: 1em;
+        padding-bottom: 72px;
+    }
+
+    .home-item {
+        width: $perc-sm;
+    }
+
+    .home-link {
+        margin-top: 10px;
+    }
+
+    .hover-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .hover-title {
+        font-size: 1.2em;
+    }
+
+    .hover-link-outer {
+        transform: translateY(-15%);
+    }
+}
