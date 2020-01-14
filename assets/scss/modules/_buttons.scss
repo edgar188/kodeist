@@ -5,13 +5,41 @@ button {
     }
 }
 
+.btn-primary {
+    padding: 12px 25px;
+    font-size: 1em;
+    text-transform: lowercase;
+    font-family: $font-secondary;
+    color: $color-light;
+    background-color: map-get($btn-colors, primary);
+    border: none;
+    border-radius: $br-default;
+}
+
 .btn-secondary {
     padding: 8px 25px;
-    text-transform: lowercase;
     font-size: 0.875em;
+    text-transform: lowercase;
     font-family: $font-secondary;
-    color: $color-primary;
+    color: map-get($btn-colors, secondary);
     background-color: $color-light;
-    border: 2px solid $color-primary;
+    border: 2px solid map-get($btn-colors, secondary);
     border-radius: $br-md;
 }
+
+.btn-tertiary {
+    padding: 10px 35px;
+    font-size: 0.875em;
+    text-transform: capitalize;
+    font-family: $font-secondary;
+    color: $color-text-primary;
+    background-color: $color-light;
+    border: none;
+    box-shadow: $box-shadow-primary;
+    border-radius: $br-default;
+}
+
+
+
+
+

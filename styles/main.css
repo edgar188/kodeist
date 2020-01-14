@@ -157,10 +157,6 @@ header {
   padding-bottom: 20px;
 }
 
-.logo-link {
-  display: inline-block;
-}
-
 .hdr-list {
   display: flex;
   align-items: center;
@@ -210,6 +206,64 @@ aside {
 .nav-list > li > a > i {
   font-size: 1.5em;
   padding-right: 20px;
+}
+
+.db.inner-cont {
+  padding-right: 0;
+}
+
+.db-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.db-rev-list {
+  display: flex;
+  align-items: baseline;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-family: "Worksans-semibold", serif;
+  color: #B2B2B2;
+}
+.db-rev-list > li {
+  padding-right: 25px;
+}
+.db-rev-list > li > a::before {
+  content: "|";
+  padding-right: 25px;
+  font-family: none;
+}
+.db-rev-list > li > a.active {
+  font-family: "Worksans-bold", serif;
+  position: relative;
+}
+.db-rev-list > li > a.active::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 38px;
+  height: 4px;
+  background-color: #169CDF;
+}
+.db-rev-list > li .first-rev-link::before {
+  content: "";
+  padding-right: 0;
+}
+
+.db-filter {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.db-filter-list {
+  display: flex;
+  justify-content: space-between;
+}
+.db-filter-list > li > button {
+  margin-right: 16px;
 }
 
 @media (min-width: 1280px) {
@@ -1221,15 +1275,38 @@ button:hover {
   opacity: 0.8;
 }
 
+.btn-primary {
+  padding: 12px 25px;
+  font-size: 1em;
+  text-transform: lowercase;
+  font-family: "Worksans-semibold", serif;
+  color: #fff;
+  background-color: #0796DD;
+  border: none;
+  border-radius: 4px;
+}
+
 .btn-secondary {
   padding: 8px 25px;
-  text-transform: lowercase;
   font-size: 0.875em;
+  text-transform: lowercase;
   font-family: "Worksans-semibold", serif;
   color: #0788C8;
   background-color: #fff;
   border: 2px solid #0788C8;
   border-radius: 10px;
+}
+
+.btn-tertiary {
+  padding: 10px 35px;
+  font-size: 0.875em;
+  text-transform: capitalize;
+  font-family: "Worksans-semibold", serif;
+  color: #1E272E;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 .m-1 {
@@ -1746,11 +1823,13 @@ button:hover {
 }
 
 .sect-cont {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.inner-sect-cont {
+.inner-cont {
+  width: 100%;
   padding-left: 105px;
   padding-right: 105px;
 }

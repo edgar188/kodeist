@@ -1,7 +1,6 @@
 // Color Usage ---------------------------
 $color-light: #fff;
 $color-dark: #000;
-$color-primary: #0788C8;
 
 // Text Base Colors ---------------------------
 $color-text-primary: #1E272E;
@@ -10,6 +9,13 @@ $color-text-secondary: #B2B2B2;
 // Background Base Colors ---------------------------
 $color-bg-primary: #242b2e;
 $color-bg-secondary: #E64A19;
+$color-bg-line: #169CDF;
+
+$btn-colors: (
+    primary: #0796DD,
+    secondary: #0788C8,
+    tertiary: #31B67F,
+);
 
 // Border Colors ---------------------------
 $color-br-primary: #202426;

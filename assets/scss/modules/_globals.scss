@@ -16,12 +16,14 @@
 
 // Section container
 .sect-cont {
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 // Container for inner sections
-.inner-sect-cont {
+.inner-cont {
+    width: 100%;
     padding-left: 105px;
     padding-right: 105px;
 }

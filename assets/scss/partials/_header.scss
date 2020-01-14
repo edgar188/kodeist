@@ -8,10 +8,6 @@ header {
     padding-bottom: 20px;
 }
 
-.logo-link {
-    display: inline-block;
-}
-
 .hdr-list {
     @include dsp-flex(null, null, null, center);
     & > li {

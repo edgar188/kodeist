@@ -1,0 +1,63 @@
+.db {
+    &.inner-cont {
+        padding-right: 0;
+    }
+}
+
+.db-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.db-rev-list {
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-family: $font-secondary;
+    color: $color-text-secondary;
+
+    & > li {
+        padding-right: 25px;
+        & > a {
+            &::before {
+                content: "|";
+                padding-right: 25px;
+                font-family: none;
+            }
+            &.active {
+                font-family: $font-tertiary;
+                position: relative;
+                &::before {
+                    content: "";
+                    @include position(-10px);
+                    width: 38px;
+                    height: 4px;
+                    background-color: $color-bg-line;
+                }
+            }
+        }
+        .first-rev-link::before {
+            content: "";
+            padding-right: 0;
+        }
+    }
+}
+
+.db-filter {
+   margin-top: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.db-filter-list {
+    display: flex;
+    justify-content: space-between;
+    & > li > button {
+        margin-right: 16px;
+    }
+}
+
+
