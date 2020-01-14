@@ -83,7 +83,7 @@ html {
 }
 
 body {
-  color: #6b7072;
+  color: #1E272E;
   font-size: 16px;
   font-family: "Worksans-medium", serif;
   outline: none;
@@ -98,15 +98,6 @@ body {
 
 a:hover {
   opacity: 0.8;
-}
-
-.container {
-  width: 93%;
-  max-width: 1780px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 [class^=icon-], [class*=" icon-"] {
@@ -154,6 +145,10 @@ a:hover {
   content: "";
 }
 
+header {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .hdr-cont {
   display: flex;
   justify-content: space-between;
@@ -191,11 +186,30 @@ a:hover {
 menu {
   max-width: 220px;
   min-width: 220px;
+  min-height: 100vh;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu-list li a {
+.menu-list {
+  font-size: 1em;
+  text-transform: capitalize;
+  font-family: "Worksans-semibold", serif;
+  color: #B2B2B2;
+}
+.menu-list > li {
+  padding-bottom: 30px;
+}
+.menu-list > li > a {
+  display: flex;
+  align-items: center;
   width: 100%;
-  display: block;
+}
+.menu-list > li > a:hover {
+  color: #1E272E;
+}
+.menu-list > li > a > i {
+  font-size: 1.5em;
+  padding-right: 20px;
 }
 
 @media (min-width: 1280px) {
@@ -1773,6 +1787,20 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
+.container {
+  width: 93%;
+  max-width: 1780px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-cont {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .mark-top {
   position: absolute;
   bottom: 5px;
@@ -1782,6 +1810,14 @@ button:hover {
   border-radius: 50%;
   color: #fff;
   background-color: #E64A19;
+}
+
+.active {
+  color: #1E272E;
+}
+.active:hover {
+  opacity: 1;
+  cursor: default;
 }
 
 .test-grid [class^=col], .test-grid > [class*=" col"] {

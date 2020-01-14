@@ -22,6 +22,20 @@
   transform: translate(-50%, -50%);
 }
 
+.container {
+  width: 93%;
+  max-width: ($cont-width + $cont-padding);
+  padding-left: ($cont-padding / 2);
+  padding-right: ($cont-padding / 2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .mark-top {
   @include position(null, null, 5px, 10px);
   font-size: 14px;
@@ -31,3 +45,10 @@
   background-color: $color-bg-secondary;
 }
 
+.active {
+  color: $color-text-primary;
+  &:hover {
+    opacity: $opacity-default;
+    cursor: default;
+  }
+}

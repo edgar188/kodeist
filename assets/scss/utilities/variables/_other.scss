@@ -15,7 +15,7 @@ $trns-delay: 50ms;
 $opacity-default: 1;
 $opacity-none: 0;
 $opacity-primary: 0.8;
-$opacity-secondary: 0.6;
+$opacity-secondary: 0.1;
 
 // Z-index ---------------------------
 $z-index-min: 0;
@@ -23,7 +23,9 @@ $z-index-mid: 10;
 $z-index-max: 100;
 
 // Box Shadow
-$box-shadow-primary: 10px 0 20px 10px rgba(36, 43, 46, $opacity-secondary);
+$box-shadow-primary: 0 5px 5px rgba(0, 0, 0, $opacity-secondary);
+$box-shadow-secondary: 5px 0px 5px rgba(0, 0, 0, $opacity-secondary);
+
 
 // Percents ---------------------------
 $perc-min: 0;

@@ -30,12 +30,13 @@
   left: $left;
 }
 
-@mixin clear-after {
-  &::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
+@mixin dsp-flex($wrap: null, $just-cont: null, $direction: null, $aln-itm: null, $aln-cont: null) {
+  display: flex;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+  justify-content: $just-cont;
+  align-items: $aln-itm;
+  align-content: $aln-cont;
 }
 
 @mixin ofl-ellipsis {
@@ -44,13 +45,12 @@
   text-overflow: ellipsis;
 }
 
-@mixin dsp-flex($wrap: null, $just-cont: null, $direction: null, $aln-itm: null, $aln-cont: null) {
-  display: flex;
-  flex-wrap: $wrap;
-  flex-direction: $direction;
-  justify-content: $just-cont;
-  align-items: $aln-itm;
-  align-content: $aln-cont;
+@mixin clear-after {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
 }
 
 

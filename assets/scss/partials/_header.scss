@@ -1,3 +1,7 @@
+header {
+    box-shadow: $box-shadow-primary;
+}
+
 .hdr-cont {
     @include dsp-flex(null, space-between, null, center);
     padding-top: 20px;
