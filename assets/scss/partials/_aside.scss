@@ -1,11 +1,11 @@
-menu {
+aside {
     max-width: 220px;
     min-width: 220px;
     min-height: 100vh;
     box-shadow: $box-shadow-secondary;
 }
 
-.menu-list {
+.nav-list {
     font-size: 1em;
     text-transform: capitalize;
     font-family: $font-secondary;

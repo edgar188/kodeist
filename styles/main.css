@@ -183,31 +183,31 @@ header {
   display: flex;
 }
 
-menu {
+aside {
   max-width: 220px;
   min-width: 220px;
   min-height: 100vh;
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu-list {
+.nav-list {
   font-size: 1em;
   text-transform: capitalize;
   font-family: "Worksans-semibold", serif;
   color: #B2B2B2;
 }
-.menu-list > li {
+.nav-list > li {
   padding-bottom: 30px;
 }
-.menu-list > li > a {
+.nav-list > li > a {
   display: flex;
   align-items: center;
   width: 100%;
 }
-.menu-list > li > a:hover {
+.nav-list > li > a:hover {
   color: #1E272E;
 }
-.menu-list > li > a > i {
+.nav-list > li > a > i {
   font-size: 1.5em;
   padding-right: 20px;
 }
@@ -1729,6 +1729,51 @@ button:hover {
   text-transform: capitalize;
 }
 
+.centered-axis-xy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 93%;
+  max-width: 1780px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sect-cont {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.inner-sect-cont {
+  padding-left: 105px;
+  padding-right: 105px;
+}
+
+.mark-top {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 14px;
+  padding: 1px 5px 3px 6px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #E64A19;
+}
+
+.active {
+  color: #1E272E;
+}
+.active:hover {
+  opacity: 1;
+  cursor: default;
+}
+
 @media (min-width: 1280px) {
   .float-lg-left {
     float: left;
@@ -1778,46 +1823,6 @@ button:hover {
   content: "";
   clear: both;
   display: block;
-}
-
-.centered-axis-xy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.container {
-  width: 93%;
-  max-width: 1780px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-cont {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.mark-top {
-  position: absolute;
-  bottom: 5px;
-  left: 10px;
-  font-size: 14px;
-  padding: 1px 5px 3px 6px;
-  border-radius: 50%;
-  color: #fff;
-  background-color: #E64A19;
-}
-
-.active {
-  color: #1E272E;
-}
-.active:hover {
-  opacity: 1;
-  cursor: default;
 }
 
 .test-grid [class^=col], .test-grid > [class*=" col"] {

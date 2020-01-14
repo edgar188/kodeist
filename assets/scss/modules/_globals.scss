@@ -1,54 +1,63 @@
-//floats
-@each $key,$val in $resolutions {
-  @media (min-width: $val) {
-    // Alignment
-    .float-#{$key}-left {
-      float: left;
-    }
-    .float#{$key}-right {
-      float: right;
-    }
-  }
-}
-
-//fixes
-.clear-after {
-  @include clear-after;
-}
-
-// item to center
+// item align to center
 .centered-axis-xy {
-  @include position(50%, null, null, 50%);
-  transform: translate(-50%, -50%);
+    @include position(50%, null, null, 50%);
+    transform: translate(-50%, -50%);
 }
 
+// Main container
 .container {
-  width: 93%;
-  max-width: ($cont-width + $cont-padding);
-  padding-left: ($cont-padding / 2);
-  padding-right: ($cont-padding / 2);
-  margin-left: auto;
-  margin-right: auto;
+    width: 93%;
+    max-width: ($cont-width + $cont-padding);
+    padding-left: ($cont-padding / 2);
+    padding-right: ($cont-padding / 2);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section-cont {
+// Section container
+.sect-cont {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
+// Container for inner sections
+.inner-sect-cont {
+    padding-left: 105px;
+    padding-right: 105px;
+}
+
+// Rounded mark for icons...
 .mark-top {
-  @include position(null, null, 5px, 10px);
-  font-size: 14px;
-  padding: 1px 5px 3px 6px;
-  border-radius: $br-rounded;
-  color: $color-light;
-  background-color: $color-bg-secondary;
+    @include position(null, null, 5px, 10px);
+    font-size: 14px;
+    padding: 1px 5px 3px 6px;
+    border-radius: $br-rounded;
+    color: $color-light;
+    background-color: $color-bg-secondary;
 }
 
 .active {
-  color: $color-text-primary;
-  &:hover {
-    opacity: $opacity-default;
-    cursor: default;
+    color: $color-text-primary;
+    &:hover {
+      opacity: $opacity-default;
+      cursor: default;
+    }
+}
+
+// Floats
+@each $key,$val in $resolutions {
+  @media (min-width: $val) {
+      // Alignment
+      .float-#{$key}-left {
+          float: left;
+      }
+      .float#{$key}-right {
+          float: right;
+      }
   }
+}
+
+// Float fixes
+.clear-after {
+  @include clear-after;
 }
