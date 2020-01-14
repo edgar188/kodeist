@@ -11,34 +11,35 @@
 </head>
 
 <body>
-    <!----------------------------- Header ----------------------------->
-    <header>
-        <div class="hdr-cont container">
-            <a href="#">
-                <img src="./assets/img/logo.png" alt="logo" />
-            </a>
-            <ul class="hdr-list">
-                <li class="hdr-btn-wrapper">
-                    <button class="btn-secondary">upgrade your plan</button>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="icon-notification">
-                            <span class="mark-top">3</span>
-                        </i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./assets/img/profile.png" alt="profile" />
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+
     <!----------------------------- Main section ----------------------------->
     <main>
-        <div class="main container">
+        <!----------------------------- Header ----------------------------->
+        <header>
+            <div class="hdr-cont container">
+                <a href="#">
+                    <img src="./assets/img/logo.png" alt="logo" />
+                </a>
+                <ul class="hdr-list">
+                    <li class="hdr-btn-wrapper">
+                        <button class="btn-secondary">upgrade your plan</button>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-notification">
+                                <span class="mark-top">3</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./assets/img/profile.png" alt="profile" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="main">
             <!----------------------------- Aside-Nav section ----------------------------->
             <aside class="sect-cont">
                 <nav>
@@ -71,7 +72,7 @@
                 </nav>
             </aside>
             <!----------------------------- Dashboard section ----------------------------->
-            <section class="sect-cont">
+            <section class="db sect-cont">
                 <div class="db inner-cont">
                     <div class="db-tab">
                         <ul class="db-rev-list">
@@ -87,7 +88,7 @@
                     <div class="db-filter">
                         <ul class="db-filter-list">
                             <li>
-                                <button class="btn-tertiary">all</button>
+                                <button class="btn-tertiary active-btn">all</button>
                             </li>
                             <li>
                                 <button class="btn-tertiary">project</button>
@@ -99,21 +100,36 @@
                                 <button class="btn-tertiary">programing language</button>
                             </li>
                         </ul>
-                        <div>
-                            <span>Newest <i class="icon-arrow-top"></i></span>
+                        <div class="db-sort">
+                            <span>Newest</span>
+                            <i class="icon-arrow-top"></i>
                         </div>
                     </div>
-                    <div>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
+                    <div class="db-cards">
+                        <div class="db-card">
+                            <h3>text text</h3>
+                            <p>text text text</p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h4>text</h4>
+                                        <p>text text</p>
+                                    </li>
+                                    <li>
+                                        <h4>text</h4>
+                                        <p>text text</p>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <span>text text</span>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
-        </div>
+        </section>
     </main>
 </body>
 

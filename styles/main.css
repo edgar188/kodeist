@@ -146,7 +146,9 @@ a:hover {
 }
 
 header {
+  position: relative;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .hdr-cont {
@@ -175,15 +177,23 @@ header {
   margin-right: 10px;
 }
 
+main {
+  background-color: #F4F6F6;
+}
+
 .main {
   display: flex;
 }
 
 aside {
-  max-width: 220px;
-  min-width: 220px;
+  max-width: 240px;
+  min-width: 240px;
   min-height: 100vh;
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+aside > nav {
+  padding-left: 45px;
 }
 
 .nav-list {
@@ -198,7 +208,6 @@ aside {
 .nav-list > li > a {
   display: flex;
   align-items: center;
-  width: 100%;
 }
 .nav-list > li > a:hover {
   color: #1E272E;
@@ -208,6 +217,9 @@ aside {
   padding-right: 20px;
 }
 
+.db {
+  padding-right: 3.5%;
+}
 .db.inner-cont {
   padding-right: 0;
 }
@@ -264,6 +276,24 @@ aside {
 }
 .db-filter-list > li > button {
   margin-right: 16px;
+}
+
+.db-sort {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  font-family: "Worksans-semibold", serif;
+  color: #1E272E;
+}
+.db-sort:hover {
+  cursor: pointer;
+}
+.db-sort > span {
+  padding-right: 20px;
+}
+.db-sort > i {
+  font-size: 1.125em;
+  color: #000;
 }
 
 @media (min-width: 1280px) {
@@ -1307,6 +1337,11 @@ button:hover {
   border: none;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+}
+
+.active-btn {
+  background-color: #72B7D9;
+  color: #fff;
 }
 
 .m-1 {

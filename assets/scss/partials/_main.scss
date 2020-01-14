@@ -1,6 +1,6 @@
-// main {
-//     background-color: #F4F6F6;
-// }
+main {
+    background-color: $color-bg-primary;
+}
 
 .main {
     @include dsp-flex;
