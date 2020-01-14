@@ -22,27 +22,12 @@
   transform: translate(-50%, -50%);
 }
 
-// menu (buttons)
-// .menu-top {
-//   padding: 25px 0;
-//   display: flex;
-//   justify-content: center;
-
-//   .menu-item {
-//     margin-right: 15px;
-//   }
-
-//   .menu-item:last-of-type {
-//     margin-right: 0;
-//   }
-// }
-
-// .icon-star.active {
-//   color: $color-icon-secondary;
-// }
-
-// .avatar {
-//   max-width: 50px;
-//   max-height: 50px;
-// }
+.mark-top {
+  @include position(null, null, 5px, 10px);
+  font-size: 14px;
+  padding: 1px 5px 3px 6px;
+  border-radius: $br-rounded;
+  color: $color-light;
+  background-color: $color-bg-secondary;
+}
 

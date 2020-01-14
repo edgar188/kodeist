@@ -18,6 +18,12 @@ body {
   box-sizing: inherit;
 }
 
+a {
+  &:hover {
+    opacity: $opacity-primary;
+  }
+}
+
 .container {
   width: 93%;
   max-width: ($cont-width + $cont-padding);

@@ -1,7 +1,5 @@
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.hdr-cont {
+    @include dsp-flex(null, space-between, null, center);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -10,35 +8,22 @@
     display: inline-block;
 }
 
-.header-list {
-    display: flex;
-    align-items: center;
+.hdr-list {
+    @include dsp-flex(null, null, null, center);
     & > li {
         margin-left: 30px;
-        & > i {
+        & > a > i {
             position: relative;
             display: inline-block;
             padding-top: 5px;
-            font-size: 18px;
+            font-size: 1.125em; 
         }
     }
 }
 
-.header-btn-wrapper {
+.hdr-btn-wrapper {
     margin-right: 10px;
 }
 
-.header-mark {
-    position: absolute;
-    left: 10px;
-    bottom: 5px;
-    background-color: orangered;
-    padding: 1px 5px;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 13px;
-    padding-bottom: 3px;
-}
 
 

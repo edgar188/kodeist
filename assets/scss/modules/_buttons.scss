@@ -1,25 +1,17 @@
-.btn-primary {
-    font-size: 1.75em;
-    padding: 10px 15px;
-    color: $color-light;
-    background-color: $color-primary;
-    height: 52px;
+button {
     &:hover {
         cursor: pointer;
-        color: $color-custom;
+        opacity: $opacity-primary;
     }
 }
 
 .btn-secondary {
     padding: 8px 25px;
+    text-transform: lowercase;
     font-size: 0.875em;
     font-family: $font-secondary;
-    text-transform: lowercase;
-    border: 1px solid #0788C8;
-    color: #0788C8;
-    background-color: #fff;
+    color: $color-primary;
+    background-color: $color-light;
+    border: 2px solid $color-primary;
     border-radius: $br-md;
-    &:hover {
-        cursor: pointer;
-    }
 }
