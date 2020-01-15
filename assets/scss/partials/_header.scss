@@ -16,14 +16,14 @@ header {
 }
 
 .hdr-list {
-    @include dsp-flex(null, null, null, center);
+    @include dsp-flex(null, null, null, flex-end);
+    color: $color-text-secondary;
     & > li {
         margin-left: 30px;
         & > a > i {
             position: relative;
             display: inline-block;
-            padding-top: 8px;
-            font-size: 1.125em; 
+            font-size: 1.5em; 
         }
     }
 }

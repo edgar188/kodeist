@@ -1,12 +1,9 @@
 .db-tab {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include dsp-flex(null, space-between, null, center);
 }
 
 .db-rev-list {
-    display: flex;
-    align-items: baseline;
+    @include dsp-flex(null, null, null, baseline);
     text-transform: uppercase;
     font-size: 1.125em;
     font-family: $font-secondary;
@@ -21,8 +18,8 @@
                 font-family: none;
             }
             &.active {
-                font-family: $font-tertiary;
                 position: relative;
+                font-family: $font-tertiary;
                 &::before {
                     content: "";
                     @include position(-10px);
@@ -31,10 +28,6 @@
                     background-color: $color-bg-line;
                 }
             }
-        }
-        .first-rev-link::before {
-            content: "";
-            padding-right: 0;
         }
     }
 }

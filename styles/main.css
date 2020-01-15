@@ -166,7 +166,8 @@ header {
 
 .hdr-list {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  color: #B2B2B2;
 }
 .hdr-list > li {
   margin-left: 30px;
@@ -174,8 +175,7 @@ header {
 .hdr-list > li > a > i {
   position: relative;
   display: inline-block;
-  padding-top: 8px;
-  font-size: 1.125em;
+  font-size: 1.5em;
 }
 
 .hdr-btn-wrapper {
@@ -245,8 +245,8 @@ aside > nav {
   font-family: none;
 }
 .db-rev-list > li > a.active {
-  font-family: "Worksans-bold", serif;
   position: relative;
+  font-family: "Worksans-bold", serif;
 }
 .db-rev-list > li > a.active::before {
   content: "";
@@ -256,21 +256,18 @@ aside > nav {
   height: 4px;
   background-color: #169CDF;
 }
-.db-rev-list > li .first-rev-link::before {
-  content: "";
-  padding-right: 0;
-}
 
 .db-filter {
-  margin-top: 30px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .db-filter-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .db-filter-list > li > button {
   margin-right: 16px;
@@ -285,9 +282,11 @@ aside > nav {
 }
 .db-sort:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 .db-sort > span {
   padding-right: 20px;
+  color: #B2B2B2;
 }
 .db-sort > i {
   font-size: 1.125em;
@@ -1345,6 +1344,10 @@ button:hover {
   background-color: #72B7D9;
   color: #fff;
 }
+.active-btn:hover {
+  opacity: 1;
+  cursor: default;
+}
 
 .m-1 {
   margin: 5px;
@@ -1871,10 +1874,10 @@ button:hover {
 
 .mark-top {
   position: absolute;
-  bottom: 5px;
-  left: 10px;
+  bottom: 10px;
+  left: 15px;
   font-size: 14px;
-  padding: 1px 5px 3px 6px;
+  padding: 2px 5px 3px 6px;
   border-radius: 50%;
   color: #fff;
   background-color: #E64A19;
@@ -1882,10 +1885,10 @@ button:hover {
 
 .active {
   color: #1E272E;
+  cursor: default;
 }
 .active:hover {
   opacity: 1;
-  cursor: default;
 }
 
 @media (min-width: 1280px) {

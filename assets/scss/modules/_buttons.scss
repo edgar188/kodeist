@@ -42,6 +42,10 @@ button {
 .active-btn {
     background-color: map-get($btn-colors, active);
     color: $color-light;
+    &:hover {
+        opacity: $opacity-default;
+        cursor: default;
+    }
 }
 
 
