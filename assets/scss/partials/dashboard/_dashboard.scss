@@ -1,9 +1,3 @@
-@import "nav-bars";
+@import "tab";
+@import "filter";
 @import "cards";
-
-.db {
-    padding-right: 3.5%;
-    &.inner-cont {
-        padding-right: 0;
-    }
-}

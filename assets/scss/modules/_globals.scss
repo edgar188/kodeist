@@ -6,10 +6,8 @@
 
 // Main container
 .container {
-    width: 93%;
+    width: 100%;
     max-width: ($cont-width + $cont-padding);
-    padding-left: ($cont-padding / 2);
-    padding-right: ($cont-padding / 2);
     margin-left: auto;
     margin-right: auto;
 }

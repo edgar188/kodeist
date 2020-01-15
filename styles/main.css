@@ -151,12 +151,17 @@ header {
   background-color: #fff;
 }
 
-.hdr-cont {
+.hdr {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-right: 105px;
+  padding-left: 35px;
+}
+.hdr.inner-cont {
+  padding-left: 35px;
 }
 
 .hdr-list {
@@ -193,7 +198,7 @@ aside {
   background-color: #fff;
 }
 aside > nav {
-  padding-left: 45px;
+  padding-left: 35px;
 }
 
 .nav-list {
@@ -289,11 +294,8 @@ aside > nav {
   color: #000;
 }
 
-.db {
-  padding-right: 3.5%;
-}
-.db.inner-cont {
-  padding-right: 0;
+.db-cards {
+  margin-top: 24px;
 }
 
 @media (min-width: 1280px) {
@@ -1849,10 +1851,8 @@ button:hover {
 }
 
 .container {
-  width: 93%;
-  max-width: 1780px;
-  padding-left: 0px;
-  padding-right: 0px;
+  width: 100%;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
 }

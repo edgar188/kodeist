@@ -1,0 +1,35 @@
+.db-filter {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .db-filter-list {
+     display: flex;
+     justify-content: space-between;
+     & > li > button {
+         margin-right: 16px;
+     }
+ }
+ 
+ .db-sort {
+     display: flex;
+     align-items: center;
+     font-size: 0.875em;
+     font-family: $font-secondary;
+     color: $color-text-primary;
+     &:hover {
+         cursor: pointer;
+     }
+     & > span {
+         padding-right: 20px;
+     
+     }
+     & > i {
+         font-size: 1.125em;
+         color: $color-dark;
+     }
+ }
+ 
+ 
