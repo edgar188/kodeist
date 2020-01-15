@@ -28,6 +28,18 @@ button {
 }
 
 .btn-tertiary {
+    background-color: #31B67F;
+    border: none;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-family: $font-secondary;
+    color: $color-light;
+    text-transform: capitalize;
+    padding: 5px 22px;
+    max-height: 25px;
+}
+
+.btn-default {
     padding: 10px 35px;
     font-size: 0.875em;
     text-transform: capitalize;
@@ -39,7 +51,8 @@ button {
     border-radius: $br-default;
 }
 
-.active-btn {
+
+.btn-active {
     background-color: map-get($btn-colors, active);
     color: $color-light;
     &:hover {
@@ -48,5 +61,15 @@ button {
     }
 }
 
+.btn-clear {
+    //all: unset;
+    background: unset;
+    border: unset;
+    padding: unset;
+    &:hover {
+        cursor: pointer;
+        opacity: $opacity-primary;
+    }
+}
 
 

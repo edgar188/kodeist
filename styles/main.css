@@ -175,7 +175,7 @@ header {
 .hdr-list > li > a > i {
   position: relative;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .hdr-btn-wrapper {
@@ -280,10 +280,6 @@ aside > nav {
   font-family: "Worksans-semibold", serif;
   color: #1E272E;
 }
-.db-sort:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
 .db-sort > span {
   padding-right: 20px;
   color: #B2B2B2;
@@ -295,6 +291,142 @@ aside > nav {
 
 .db-cards {
   margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.db-card {
+  width: 23.75%;
+  margin-bottom: 24px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #aaaaaa;
+  border-radius: 10px;
+}
+.db-card:hover {
+  box-shadow: 10px 10px 10px #aaaaaa;
+}
+
+.card-major {
+  display: flex;
+}
+
+.card-head-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 21px;
+  font-family: "Worksans-bold", serif;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.card-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  font-size: 14px;
+  font-family: "Worksans-medium", serif;
+  opacity: 0.7;
+  padding-top: 5px;
+  text-transform: capitalize;
+}
+
+.card-top {
+  margin-top: 32px;
+  padding-left: 28px;
+  padding-right: 20px;
+}
+
+.card-list-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.card-list-wrapper > ul > li {
+  padding-top: 30px;
+}
+
+.card-list {
+  margin-top: 32px;
+  padding-left: 28px;
+  padding-right: 15px;
+  position: relative;
+}
+.card-list > li {
+  padding-bottom: 30px;
+}
+.card-list > li:first-of-type {
+  width: calc(100% - 40px);
+}
+.card-list > li:last-of-type {
+  width: calc(100% - 110px);
+}
+
+.btn-del {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  height: 24px;
+  font-size: 24px;
+  color: #EAEBEC;
+}
+.btn-del:hover {
+  color: #1E272E;
+  opacity: 1;
+}
+
+.card-issue-wrapper {
+  display: block;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  text-align: center;
+}
+.card-issue-wrapper .card-issue-count {
+  padding: 14px 19px;
+  background-color: #F0F2F2;
+  border-radius: 50%;
+  font-size: 16px;
+  font-family: "Worksans-semibold", serif;
+}
+.card-issue-wrapper .card-issue-text {
+  padding-top: 15px;
+}
+.card-issue-wrapper:hover {
+  cursor: pointer;
+}
+
+.btn-review {
+  background-color: #31B67F;
+  border: none;
+  border-radius: 12px;
+  font-size: 12px;
+  font-family: "Worksans-semibold", serif;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 22px;
+  max-height: 25px;
+}
+
+.card-diff {
+  padding-top: 20px;
+  padding-left: 28px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: #F4F6F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-diff > div {
+  width: calc(100% - 110px);
 }
 
 @media (min-width: 1280px) {
@@ -1329,6 +1461,18 @@ button:hover {
 }
 
 .btn-tertiary {
+  background-color: #31B67F;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.75em;
+  font-family: "Worksans-semibold", serif;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 5px 22px;
+  max-height: 25px;
+}
+
+.btn-default {
   padding: 10px 35px;
   font-size: 0.875em;
   text-transform: capitalize;
@@ -1340,13 +1484,23 @@ button:hover {
   border-radius: 4px;
 }
 
-.active-btn {
+.btn-active {
   background-color: #72B7D9;
   color: #fff;
 }
-.active-btn:hover {
+.btn-active:hover {
   opacity: 1;
   cursor: default;
+}
+
+.btn-clear {
+  background: unset;
+  border: unset;
+  padding: unset;
+}
+.btn-clear:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .m-1 {
@@ -1877,7 +2031,7 @@ button:hover {
   bottom: 10px;
   left: 15px;
   font-size: 14px;
-  padding: 2px 5px 3px 6px;
+  padding: 0px 3px 2px 5px;
   border-radius: 50%;
   color: #fff;
   background-color: #E64A19;

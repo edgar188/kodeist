@@ -11,134 +11,374 @@
     <script async defer src="./assets/js/index.js"></script>
 </head>
 
-<body>    
-        <!----------------------------- Header ----------------------------->
-        <header class="container">
-            <div class="hdr inner-cont">
-                <a href="#">
-                    <img src="./assets/img/logo.png" alt="logo" />
-                </a>
-                <ul class="hdr-list">
-                    <li class="hdr-btn-wrapper">
-                        <button class="btn-secondary">upgrade your plan</button>
-                    </li>
+<body>
+    <!----------------------------- Header ----------------------------->
+    <header class="container">
+        <div class="hdr inner-cont">
+            <a href="#">
+                <img src="./assets/img/logo.png" alt="logo" />
+            </a>
+            <ul class="hdr-list">
+                <li class="hdr-btn-wrapper">
+                    <button class="btn-secondary">upgrade your plan</button>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-notification">
+                            <span class="mark-top">3</span>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/profile.png" alt="profile" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!----------------------------- Main ----------------------------->
+    <main class="main">
+        <!----------------------------- Aside-Nav ----------------------------->
+        <aside class="sect-cont">
+            <nav>
+                <ul class="nav-list">
                     <li>
-                        <a href="#">
-                            <i class="icon-notification">
-                                <span class="mark-top">3</span>
-                            </i>
+                        <a href="#" class="active">
+                            <i class="icon-dashboard"></i>
+                            <span>dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="./assets/img/profile.png" alt="profile" />
+                        <a href="#" class="">
+                            <i class="icon-archive"></i>
+                            <span>archive</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <i class="icon-statistics"></i>
+                            <span>statistics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <i class="icon-settings"></i>
+                            <span>settings</span>
                         </a>
                     </li>
                 </ul>
+            </nav>
+        </aside>
+        <!----------------------------- Dashboard ----------------------------->
+        <section class="db sect-cont inner-cont">
+            <div class="db-tab">
+                <ul class="db-rev-list">
+                    <li>
+                        <a href="#" class="first-rev-link active">codes on review</a>
+                    </li>
+                    <li>
+                        <a href="#">completed reviews</a>
+                    </li>
+                </ul>
+                <button class="btn-primary">add code sample</button>
             </div>
-        </header>
-        <!----------------------------- Main ----------------------------->
-        <main class="main">
-            <!----------------------------- Aside-Nav ----------------------------->
-            <aside class="sect-cont">
-                <nav>
-                    <ul class="nav-list">
+            <div class="db-filter">
+                <ul class="db-filter-list">
+                    <li>
+                        <button class="btn-default btn-active">all</button>
+                    </li>
+                    <li>
+                        <button class="btn-default">project</button>
+                    </li>
+                    <li>
+                        <button class="btn-default">developer</button>
+                    </li>
+                    <li>
+                        <button class="btn-default">programing language</button>
+                    </li>
+                </ul>
+                <button class="db-sort btn-clear">
+                    <span>Newest</span>
+                    <i class="icon-arrow-top"></i>
+                </button>
+            </div>
+            <div class="db-cards">
+                <div class="db-card">
+                    <ul class="card-list">
                         <li>
-                            <a href="#" class="active">
-                                <i class="icon-dashboard"></i>
-                                <span>dashboard</span>
-                            </a>
+                            <div>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
+                            </div>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
                         </li>
                         <li>
-                            <a href="#" class="">
-                                <i class="icon-archive"></i>
-                                <span>archive</span>
-                            </a>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
                         </li>
                         <li>
-                            <a href="#" class="">
-                                <i class="icon-statistics"></i>
-                                <span>statistics</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="">
-                                <i class="icon-settings"></i>
-                                <span>settings</span>
+                            <div>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
+                            </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
                             </a>
                         </li>
                     </ul>
-                </nav>
-            </aside>
-            <!----------------------------- Dashboard ----------------------------->
-            <section class="db sect-cont inner-cont">
-                <div class="db-tab">
-                    <ul class="db-rev-list">
-                        <li>
-                            <a href="#" class="first-rev-link active">codes on review</a>
-                        </li>
-                        <li>
-                            <a href="#">completed reviews</a>
-                        </li>
-                    </ul>
-                    <button class="btn-primary">add code sample</button>
-                </div>
-                <div class="db-filter">
-                    <ul class="db-filter-list">
-                        <li>
-                            <button class="btn-tertiary active-btn">all</button>
-                        </li>
-                        <li>
-                            <button class="btn-tertiary">project</button>
-                        </li>
-                        <li>
-                            <button class="btn-tertiary">developer</button>
-                        </li>
-                        <li>
-                            <button class="btn-tertiary">programing language</button>
-                        </li>
-                    </ul>
-                    <div class="db-sort">
-                        <span>Newest</span>
-                        <i class="icon-arrow-top"></i>
+                    <div class="card-diff">
+                        <div>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
+                        </div>
+                        <button class="btn-tertiary">in review</button>
                     </div>
                 </div>
-                <div class="db-cards">
-                    <div class="db-card">
-                        <div>
+                <div class="db-card">
+                    <ul class="card-list">
+                        <li>
                             <div>
-                                <h3>New_Sample</h3>
-                                <p>Sample Name</p>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
                             </div>
-                            <i class="icon-delete"></i>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>
-                                    <h4>GitHub</h4>
-                                    <p>Repository</p>
-                                </li>
-                                <li>
-                                    <h4>Low</h4>
-                                    <p>Priority</p>
-                                </li>
-                            </ul>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
+                        </li>
+                        <li>
                             <div>
-                                <span>text text</span>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
                             </div>
-                        </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-diff">
                         <div>
-                            <div>
-                                <h3>14 June 2018</h3>
-                                <p>Due Date</p>
-                            </div>
-                            <button>In Review</button>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
                         </div>
+                        <button class="btn-tertiary">in review</button>
                     </div>
-
                 </div>
-
-            </section>
-        </main>
+                <div class="db-card">
+                    <ul class="card-list">
+                        <li>
+                            <div>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
+                            </div>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
+                            </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-diff">
+                        <div>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
+                        </div>
+                        <button class="btn-tertiary">in review</button>
+                    </div>
+                </div>
+                <div class="db-card">
+                    <ul class="card-list">
+                        <li>
+                            <div>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
+                            </div>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
+                            </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-diff">
+                        <div>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
+                        </div>
+                        <button class="btn-tertiary">in review</button>
+                    </div>
+                </div>
+                <div class="db-card">
+                    <ul class="card-list">
+                        <li>
+                            <div>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
+                            </div>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
+                            </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-diff">
+                        <div>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
+                        </div>
+                        <button class="btn-tertiary">in review</button>
+                    </div>
+                </div>
+                <div class="db-card">
+                    <ul class="card-list">
+                        <li>
+                            <div>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
+                            </div>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
+                            </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-diff">
+                        <div>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
+                        </div>
+                        <button class="btn-tertiary">in review</button>
+                    </div>
+                </div>
+                <div class="db-card">
+                    <ul class="card-list">
+                        <li>
+                            <div>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
+                            </div>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
+                            </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-diff">
+                        <div>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
+                        </div>
+                        <button class="btn-tertiary">in review</button>
+                    </div>
+                </div>
+                <div class="db-card">
+                    <ul class="card-list">
+                        <li>
+                            <div>
+                                <h3 class="card-head-title">New_Sample</h3>
+                                <p class="card-desc">Sample Name</p>
+                            </div>
+                            <button class="btn-del btn-clear">
+                                <i class="icon-delete"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <h4 class="card-title">GitHub</h4>
+                            <p class="card-desc">Repository</p>
+                        </li>
+                        <li>
+                            <div>
+                                <h4 class="card-title">Low</h4>
+                                <p class="card-desc">Priority</p>
+                            </div>
+                            <a class="card-issue-wrapper">
+                                <span class="card-issue-count">0</span>
+                                <span class="card-issue-text card-desc">Isues Found</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="card-diff">
+                        <div>
+                            <h4 class="card-title">14 june 2018</h4>
+                            <p class="card-desc">due date</p>
+                        </div>
+                        <button class="btn-tertiary">in review</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>

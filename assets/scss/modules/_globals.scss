@@ -30,7 +30,7 @@
 .mark-top {
     @include position(null, null, 10px, 15px);
     font-size: 14px;
-    padding: 2px 5px 3px 6px;
+    padding: 0px 3px 2px 5px;
     border-radius: $br-rounded;
     color: $color-light;
     background-color: $color-bg-secondary;

@@ -7,3 +7,9 @@
 
   @return $result;
 }
+
+@function get-width($count) {
+  // calc(100% / 4 - 3*24px);
+  $result: calc(100% / $count);
+  @return $result;
+}

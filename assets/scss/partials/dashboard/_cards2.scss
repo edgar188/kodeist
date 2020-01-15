@@ -7,7 +7,6 @@
 
 .db-card {
     width: 23.75%;
-    // margin-right: 1.65%;
     margin-bottom: 24px;
     background-color: $color-light;
     box-shadow: 0px 0px 10px #aaaaaa;
@@ -16,44 +15,10 @@
     &:hover {
         box-shadow: 10px 10px 10px #aaaaaa;
     }
-    // &:nth-of-type(4n+4) {
-    //     margin-right: 0;
-    // }
-    // @media (max-width: 1280px) {
-    //     width: 32.3%;
-    //     &:nth-of-type(4n+4) {
-    //         margin-right: 1.33%;
-    //     }
-    //     &:nth-of-type(3n+3) {
-    //         margin-right: 0;
-    //     }
-    // }
-    // @media (max-width: 1024px) {
-    //     width: 49.3%;
-    //     &:nth-of-type(2n+2) {
-    //         margin-right: 0;
-    //     }
-    // }
 }
 
 .card-major {
     display: flex;
-    & > button {
-        position: relative;
-        top: -15px;
-        left: 5px;
-        height: 24px;
-        font-size: 24px;
-        color: #EAEBEC;
-        &:hover {
-            color: $color-text-primary;
-            opacity: 1;
-        }
-    }
-}
-
-.card-head {
-    width: calc(100% - 25px);
 }
 
 .card-head-title {
@@ -64,6 +29,7 @@
 
 .card-title {
     @include ofl-ellipsis;
+    text-transform: capitalize;
 }
 
 .card-desc {
@@ -73,6 +39,7 @@
     font-family: $font-primary;
     opacity: 0.7;
     padding-top: 5px;
+    text-transform: capitalize;
 }
 
 .card-top {
@@ -86,36 +53,75 @@
     align-items: flex-end;
     justify-content: space-between;
     & > ul {
-        width: calc(100% - 85px);
         & > li {
             padding-top: 30px;
         }
     }
 }
 
-.card-issue-wrapper {
+.card-list {
+    margin-top: 32px;
+    padding-left: 28px;
+    padding-right: 15px;
     position: relative;
-    right: 10px;
-    top: 15px;
+    & > li {
+        padding-bottom: 30px;
+        &:first-of-type {
+            width: calc(100% - 40px);
+        }
+        &:last-of-type {
+            width: calc(100% - 110px);
+        }
+    }
+}
+
+.btn-del {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    height: 24px;
+    font-size: 24px;
+    color: #EAEBEC;
+    &:hover {
+        color: $color-text-primary;
+        opacity: 1;
+    }
+}
+
+.card-issue-wrapper {
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    text-align: center;
+    .card-issue-count {
+        padding: 14px 19px;
+        background-color: #F0F2F2;
+        border-radius: 50%;
+        font-size: 16px;
+        font-family: $font-secondary;
+    }
+    .card-issue-text {
+        padding-top: 15px;
+    }
     &:hover {
         cursor: pointer;
     }
 }
 
-.card-issue-count {
-    display: block;
-    background-color: #F0F2F2;
-    border-radius: 50%;
-    padding: 15px 0;
-    max-width: 48px;
-    max-height: 48px;
-    text-align: center;
+.btn-review {
+    background-color: #31B67F;
+    border: none;
+    border-radius: 12px;
+    font-size: 12px;
     font-family: $font-secondary;
-    margin-left: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 22px;
+    max-height: 25px;
 }
 
 .card-diff {
-    margin-top: 25px;
     padding-top: 20px;
     padding-left: 28px;
     padding-right: 20px;
@@ -129,14 +135,3 @@
     }
 }
 
-.btn-review {
-    background-color: #31B67F;
-    border: none;
-    border-radius: 12px;
-    font-size: 12px;
-    font-family: "Worksans-semibold", serif;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 5px 22px;
-    max-height: 25px;
-}

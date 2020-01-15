@@ -15,10 +15,6 @@
      font-size: 0.875em;
      font-family: $font-secondary;
      color: $color-text-primary;
-     &:hover {
-         cursor: pointer;
-         opacity: $opacity-primary;
-     }
      & > span {
         padding-right: 20px;
         color: $color-text-secondary;
