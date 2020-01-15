@@ -169,7 +169,7 @@ header {
 .hdr-list > li > a > i {
   position: relative;
   display: inline-block;
-  padding-top: 5px;
+  padding-top: 8px;
   font-size: 1.125em;
 }
 
@@ -215,13 +215,6 @@ aside > nav {
 .nav-list > li > a > i {
   font-size: 1.5em;
   padding-right: 20px;
-}
-
-.db {
-  padding-right: 3.5%;
-}
-.db.inner-cont {
-  padding-right: 0;
 }
 
 .db-tab {
@@ -294,6 +287,13 @@ aside > nav {
 .db-sort > i {
   font-size: 1.125em;
   color: #000;
+}
+
+.db {
+  padding-right: 3.5%;
+}
+.db.inner-cont {
+  padding-right: 0;
 }
 
 @media (min-width: 1280px) {
