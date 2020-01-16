@@ -34,7 +34,7 @@
 
 // Elements align to center with flexbox
 .alg-center {
-    @include dsp-flex(null, null, null, center);
+    @include dsp-flex(null, null, center);
 }
 
 // Rounded mark for icons...
