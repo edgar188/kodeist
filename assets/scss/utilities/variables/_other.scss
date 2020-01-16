@@ -1,6 +1,7 @@
 // Border Radiuses ---------------------------
 $br-default: 4px;
 $br-md: 10px;
+$br-model: 12px;
 $br-lg: 30px;
 $br-rounded: 50%;
 $br-none: 0;
@@ -14,8 +15,9 @@ $trns-delay: 50ms;
 // Opacities ---------------------------
 $opacity-default: 1;
 $opacity-none: 0;
-$opacity-primary: 0.8;
+$opacity-primary: 0.7;
 $opacity-secondary: 0.1;
+
 
 // Z-index ---------------------------
 $z-index-min: 0;
@@ -23,14 +25,8 @@ $z-index-mid: 10;
 $z-index-max: 100;
 
 // Box Shadow
-$box-shadow-primary: 0 5px 5px rgba(0, 0, 0, $opacity-secondary);
+$box-shadow-primary: 0px 5px 5px rgba(0, 0, 0, $opacity-secondary);
 $box-shadow-secondary: 5px 0px 5px rgba(0, 0, 0, $opacity-secondary);
+$box-shadow-tertiary: 0px 0px 10px rgba(170, 170, 170);
+$box-shadow-tertiary-hover: 5px 10px 10px rgb(170, 170, 170);
 
-
-// Percents ---------------------------
-$perc-min: 0;
-$perc-xs: 25%;
-$perc-sm: 33.33%;
-$perc-md: 50%;
-$perc-lg: 85%;
-$perc-max: 100%;

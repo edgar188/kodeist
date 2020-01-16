@@ -1,29 +1,26 @@
 .db-cards {
+    @include dsp-flex(wrap, space-between);
     margin-top: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .db-card {
-    width: 23.75%;
+    width: 23.77%;
     margin-bottom: 24px;
     background-color: $color-light;
-    box-shadow: 0px 0px 10px #aaaaaa;
-    border-radius: 10px;
-
+    box-shadow: $box-shadow-tertiary;
+    border-radius: $br-md;
     &:hover {
-        box-shadow: 10px 10px 10px #aaaaaa;
+        box-shadow: $box-shadow-tertiary-hover;
     }
 }
 
 .card-major {
-    display: flex;
+    @include dsp-flex;
 }
 
 .card-head-title {
     @include ofl-ellipsis;
-    font-size: 21px;
+    font-size: 1.3125em;
     font-family: $font-tertiary;
 }
 
@@ -35,11 +32,11 @@
 .card-desc {
     @include ofl-ellipsis;
     display: block;
-    font-size: 14px;
-    font-family: $font-primary;
-    opacity: 0.7;
     padding-top: 5px;
     text-transform: capitalize;
+    font-size: 14px;
+    font-family: $font-primary;
+    opacity: $opacity-primary;
 }
 
 .card-top {
@@ -49,21 +46,17 @@
 }
 
 .card-list-wrapper {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    & > ul {
-        & > li {
-            padding-top: 30px;
-        }
+    @include dsp-flex(null, space-between, null, flex-end);
+    & > ul > li{
+        padding-top: 30px;
     }
 }
 
 .card-list {
+    position: relative;
     margin-top: 32px;
     padding-left: 28px;
     padding-right: 15px;
-    position: relative;
     & > li {
         padding-bottom: 30px;
         &:first-of-type {
@@ -76,62 +69,51 @@
 }
 
 .btn-del {
-    position: absolute;
-    top: -15px;
-    right: 15px;
+    @include position(-15px, 15px);
     height: 24px;
-    font-size: 24px;
-    color: #EAEBEC;
+    font-size: 1.5em;
+    color: $color-icon-primary;
     &:hover {
         color: $color-text-primary;
-        opacity: 1;
+        opacity: $opacity-default;
     }
 }
 
-.card-issue-wrapper {
+.card-issue-link {
+    @include position(null, 30px, 20px);
     display: block;
-    position: absolute;
-    right: 30px;
-    bottom: 20px;
     text-align: center;
-    .card-issue-count {
-        padding: 14px 19px;
-        background-color: #F0F2F2;
-        border-radius: 50%;
-        font-size: 16px;
-        font-family: $font-secondary;
-    }
-    .card-issue-text {
-        padding-top: 15px;
-    }
     &:hover {
         cursor: pointer;
     }
 }
 
-.btn-review {
-    background-color: #31B67F;
-    border: none;
-    border-radius: 12px;
-    font-size: 12px;
+.card-issue-count {
+    display: inline-block;
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+    line-height: 38px;
+    font-size: 1em;
     font-family: $font-secondary;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 5px 22px;
-    max-height: 25px;
+    background-color: $color-bg-primary;
+    border-radius: $br-rounded;
+
+}
+
+.card-issue-text {
+    padding-top: 15px;
 }
 
 .card-diff {
+    @include dsp-flex(null, space-between, null, center);
     padding-top: 20px;
-    padding-left: 28px;
     padding-right: 20px;
     padding-bottom: 20px;
-    background-color: #F4F6F6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding-left: 28px;
+    background-color: $color-bg-primary;
     & > div {
-        width: calc-val(110);
+        width: calc-val(100);
     }
 }
 

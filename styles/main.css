@@ -97,7 +97,7 @@ body {
 }
 
 a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 [class^=icon-], [class*=" icon-"] {
@@ -147,7 +147,7 @@ a:hover {
 
 header {
   position: relative;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
 
@@ -290,21 +290,21 @@ aside > nav {
 }
 
 .db-cards {
-  margin-top: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 24px;
 }
 
 .db-card {
-  width: 23.75%;
+  width: 23.77%;
   margin-bottom: 24px;
   background-color: #fff;
   box-shadow: 0px 0px 10px #aaaaaa;
   border-radius: 10px;
 }
 .db-card:hover {
-  box-shadow: 10px 10px 10px #aaaaaa;
+  box-shadow: 5px 10px 10px #aaaaaa;
 }
 
 .card-major {
@@ -315,7 +315,7 @@ aside > nav {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 21px;
+  font-size: 1.3125em;
   font-family: "Worksans-bold", serif;
 }
 
@@ -331,11 +331,11 @@ aside > nav {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
+  padding-top: 5px;
+  text-transform: capitalize;
   font-size: 14px;
   font-family: "Worksans-medium", serif;
   opacity: 0.7;
-  padding-top: 5px;
-  text-transform: capitalize;
 }
 
 .card-top {
@@ -346,18 +346,18 @@ aside > nav {
 
 .card-list-wrapper {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .card-list-wrapper > ul > li {
   padding-top: 30px;
 }
 
 .card-list {
+  position: relative;
   margin-top: 32px;
   padding-left: 28px;
   padding-right: 15px;
-  position: relative;
 }
 .card-list > li {
   padding-bottom: 30px;
@@ -374,7 +374,7 @@ aside > nav {
   top: -15px;
   right: 15px;
   height: 24px;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #EAEBEC;
 }
 .btn-del:hover {
@@ -382,51 +382,45 @@ aside > nav {
   opacity: 1;
 }
 
-.card-issue-wrapper {
-  display: block;
+.card-issue-link {
   position: absolute;
   right: 30px;
   bottom: 20px;
+  display: block;
   text-align: center;
 }
-.card-issue-wrapper .card-issue-count {
-  padding: 14px 19px;
-  background-color: #F0F2F2;
-  border-radius: 50%;
-  font-size: 16px;
-  font-family: "Worksans-semibold", serif;
-}
-.card-issue-wrapper .card-issue-text {
-  padding-top: 15px;
-}
-.card-issue-wrapper:hover {
+.card-issue-link:hover {
   cursor: pointer;
 }
 
-.btn-review {
-  background-color: #31B67F;
-  border: none;
-  border-radius: 12px;
-  font-size: 12px;
+.card-issue-count {
+  display: inline-block;
+  padding: 5px;
+  width: 48px;
+  height: 48px;
+  line-height: 38px;
+  font-size: 1em;
   font-family: "Worksans-semibold", serif;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 5px 22px;
-  max-height: 25px;
+  background-color: #F4F6F6;
+  border-radius: 50%;
+}
+
+.card-issue-text {
+  padding-top: 15px;
 }
 
 .card-diff {
-  padding-top: 20px;
-  padding-left: 28px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  background-color: #F4F6F6;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 28px;
+  background-color: #F4F6F6;
 }
 .card-diff > div {
-  width: calc(100% - 110px);
+  width: calc(100% - 100px);
 }
 
 @media (min-width: 1280px) {
@@ -1435,7 +1429,7 @@ aside > nav {
 
 button:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .btn-primary {
@@ -1445,7 +1439,7 @@ button:hover {
   font-family: "Worksans-semibold", serif;
   color: #fff;
   background-color: #0796DD;
-  border: none;
+  border: 0;
   border-radius: 4px;
 }
 
@@ -1461,15 +1455,18 @@ button:hover {
 }
 
 .btn-tertiary {
-  background-color: #31B67F;
-  border: none;
-  border-radius: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 20px;
+  max-height: 25px;
+  text-transform: capitalize;
   font-size: 0.75em;
   font-family: "Worksans-semibold", serif;
+  border: 0;
+  border-radius: 12px;
   color: #fff;
-  text-transform: capitalize;
-  padding: 5px 22px;
-  max-height: 25px;
+  background-color: #31B67F;
 }
 
 .btn-default {
@@ -1479,8 +1476,8 @@ button:hover {
   font-family: "Worksans-semibold", serif;
   color: #1E272E;
   background-color: #fff;
-  border: none;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border: 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
 
@@ -1500,7 +1497,7 @@ button:hover {
 }
 .btn-clear:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .m-1 {
@@ -2009,7 +2006,7 @@ button:hover {
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2030,8 +2027,11 @@ button:hover {
   position: absolute;
   bottom: 10px;
   left: 15px;
+  width: 16px;
+  height: 16px;
+  padding-left: 1px;
   font-size: 14px;
-  padding: 0px 3px 2px 5px;
+  text-align: center;
   border-radius: 50%;
   color: #fff;
   background-color: #E64A19;
@@ -2042,6 +2042,14 @@ button:hover {
   cursor: default;
 }
 .active:hover {
+  opacity: 1;
+}
+
+.danger {
+  color: #fff;
+  background-color: #E2424E;
+}
+.danger:hover {
   opacity: 1;
 }
 

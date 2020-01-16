@@ -12,7 +12,7 @@ button {
     font-family: $font-secondary;
     color: $color-light;
     background-color: map-get($btn-colors, primary);
-    border: none;
+    border: $br-none;
     border-radius: $br-default;
 }
 
@@ -28,15 +28,16 @@ button {
 }
 
 .btn-tertiary {
-    background-color: #31B67F;
-    border: none;
-    border-radius: 12px;
+    @include ofl-ellipsis;
+    padding: 5px 20px;
+    max-height: 25px;
+    text-transform: capitalize;
     font-size: 0.75em;
     font-family: $font-secondary;
+    border: $br-none;
+    border-radius: $br-model;
     color: $color-light;
-    text-transform: capitalize;
-    padding: 5px 22px;
-    max-height: 25px;
+    background-color: map-get($btn-colors, tertiary);
 }
 
 .btn-default {
@@ -46,7 +47,7 @@ button {
     font-family: $font-secondary;
     color: $color-text-primary;
     background-color: $color-light;
-    border: none;
+    border: $br-none;
     box-shadow: $box-shadow-primary;
     border-radius: $br-default;
 }
