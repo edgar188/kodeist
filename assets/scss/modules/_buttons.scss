@@ -52,7 +52,6 @@ button {
     border-radius: $br-default;
 }
 
-
 .btn-active {
     background-color: map-get($btn-colors, active);
     color: $color-light;

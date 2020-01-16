@@ -1,13 +1,10 @@
 header {
-    position: relative;
     box-shadow: $box-shadow-primary;
     background-color: $color-light;
 }
 
 .hdr {
     @include dsp-flex(null, space-between, null, center);
-    padding-top: 20px;
-    padding-bottom: 20px;
     padding-right: 105px;
     padding-left: 35px;
     &.inner-cont {

@@ -7,11 +7,12 @@
     text-transform: uppercase;
     font-size: 1.125em;
     font-family: $font-secondary;
-    color: $color-text-secondary;
-
+    color: $color-text-primary;
+    
     & > li {
         padding-right: 25px;
         & > a {
+            color: rgba($color-text-primary, $opacity-secondary);
             &::before {
                 content: "|";
                 padding-right: 25px;
@@ -20,6 +21,7 @@
             &.active {
                 position: relative;
                 font-family: $font-tertiary;
+                color: $color-text-primary;
                 &::before {
                     content: "";
                     @include position(-10px);

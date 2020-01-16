@@ -12,6 +12,12 @@
     margin-right: auto;
 }
 
+.sect-cont-wrap {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 // Section container
 .sect-cont {
     width: 100%;
@@ -24,6 +30,11 @@
     width: 100%;
     padding-left: 105px;
     padding-right: 105px;
+}
+
+// Elements align to center with flexbox
+.alg-center {
+    @include dsp-flex(null, null, null, center);
 }
 
 // Rounded mark for icons...

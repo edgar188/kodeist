@@ -13,12 +13,12 @@ aside {
     font-size: 1em;
     text-transform: capitalize;
     font-family: $font-secondary;
-    color: $color-text-secondary;
+    color: $color-text-primary;
     & > li {
         padding-bottom: 30px;
         & > a {
-            @include dsp-flex(null, null, null, center);
-            &:hover {
+            color: rgba($color-text-primary, $opacity-secondary);
+            &.active {
                 color: $color-text-primary;
             }
             & > i {

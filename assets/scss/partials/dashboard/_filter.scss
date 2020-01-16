@@ -4,25 +4,25 @@
  }
  
  .db-filter-list {
-     @include dsp-flex(null, space-between, null, center);
-     & > li > button {
-         margin-right: 16px;
-     }
+    @include dsp-flex(null, space-between, null, center);
+    & > li > button {
+        margin-right: 16px;
+    }
  }
  
- .db-sort {
-     @include dsp-flex(null, null, null, center);
-     font-size: 0.875em;
-     font-family: $font-secondary;
-     color: $color-text-primary;
-     & > span {
+ .db-sort-btn {
+    text-transform: capitalize;
+    font-size: 0.875em;
+    font-family: $font-secondary;
+    color: $color-text-primary;
+    & > span {
         padding-right: 20px;
-        color: $color-text-secondary;
+        color: rgba($color-text-primary, $opacity-secondary);
      }
-     & > i {
-         font-size: 1.125em;
-         color: $color-dark;
-     }
+    & > i {
+        font-size: 1.125em;
+        color: $color-dark;
+    }
  }
  
  

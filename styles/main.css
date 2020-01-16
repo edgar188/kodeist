@@ -146,7 +146,6 @@ a:hover {
 }
 
 header {
-  position: relative;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
@@ -155,8 +154,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   padding-right: 105px;
   padding-left: 35px;
 }
@@ -205,16 +202,15 @@ aside > nav {
   font-size: 1em;
   text-transform: capitalize;
   font-family: "Worksans-semibold", serif;
-  color: #B2B2B2;
+  color: #1E272E;
 }
 .nav-list > li {
   padding-bottom: 30px;
 }
 .nav-list > li > a {
-  display: flex;
-  align-items: center;
+  color: rgba(30, 39, 46, 0.5);
 }
-.nav-list > li > a:hover {
+.nav-list > li > a.active {
   color: #1E272E;
 }
 .nav-list > li > a > i {
@@ -234,10 +230,13 @@ aside > nav {
   text-transform: uppercase;
   font-size: 1.125em;
   font-family: "Worksans-semibold", serif;
-  color: #B2B2B2;
+  color: #1E272E;
 }
 .db-rev-list > li {
   padding-right: 25px;
+}
+.db-rev-list > li > a {
+  color: rgba(30, 39, 46, 0.5);
 }
 .db-rev-list > li > a::before {
   content: "|";
@@ -247,6 +246,7 @@ aside > nav {
 .db-rev-list > li > a.active {
   position: relative;
   font-family: "Worksans-bold", serif;
+  color: #1E272E;
 }
 .db-rev-list > li > a.active::before {
   content: "";
@@ -273,18 +273,17 @@ aside > nav {
   margin-right: 16px;
 }
 
-.db-sort {
-  display: flex;
-  align-items: center;
+.db-sort-btn {
+  text-transform: capitalize;
   font-size: 0.875em;
   font-family: "Worksans-semibold", serif;
   color: #1E272E;
 }
-.db-sort > span {
+.db-sort-btn > span {
   padding-right: 20px;
-  color: #B2B2B2;
+  color: rgba(30, 39, 46, 0.5);
 }
-.db-sort > i {
+.db-sort-btn > i {
   font-size: 1.125em;
   color: #000;
 }
@@ -421,6 +420,22 @@ aside > nav {
 }
 .card-diff > div {
   width: calc(100% - 100px);
+}
+
+footer {
+  box-shadow: 0px 0px 10px #aaaaaa;
+  background-color: #fff;
+}
+
+.ftr-content-wrap {
+  font-size: 1em;
+  text-transform: capitalize;
+  justify-content: center;
+}
+.ftr-content-wrap > img {
+  padding-right: 20px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 @media (min-width: 1280px) {
@@ -2011,6 +2026,12 @@ button:hover {
   margin-right: auto;
 }
 
+.sect-cont-wrap {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .sect-cont {
   width: 100%;
   padding-top: 30px;
@@ -2021,6 +2042,11 @@ button:hover {
   width: 100%;
   padding-left: 105px;
   padding-right: 105px;
+}
+
+.alg-center {
+  display: flex;
+  align-items: center;
 }
 
 .mark-top {
