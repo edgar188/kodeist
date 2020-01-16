@@ -179,6 +179,12 @@ header {
   margin-right: 10px;
 }
 
+.logo {
+  display: block;
+  max-width: 160px;
+  max-height: 30px;
+}
+
 main {
   background-color: #F4F6F6;
 }
@@ -2392,6 +2398,11 @@ button:hover {
   .card-diff {
     padding-left: 10px;
     padding-right: 5px;
+  }
+}
+@media (max-width: 1280px) {
+  body {
+    font-size: 15px;
   }
 }
 

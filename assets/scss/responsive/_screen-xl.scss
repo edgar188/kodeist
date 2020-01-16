@@ -5,12 +5,14 @@
         padding-left: 50px;
         padding-right: 50px;
     }
+
     // ----------------------- Header -----------------------
     .hdr {
         &.inner-cont {
             padding-left: 25px;
         }
     }
+
     // ----------------------- Aside-Nav -----------------------
     aside {
         max-width: 200px;
@@ -23,7 +25,7 @@
     .nav-list > li > a > i {
         padding-right: 10px;
     }
-
+    
     // ----------------------- Dashboard -----------------------
     .card-list {
         padding-left: 10px;
