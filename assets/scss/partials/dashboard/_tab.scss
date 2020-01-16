@@ -1,9 +1,9 @@
 .db-tab {
-    @include dsp-flex(null, space-between, null, center);
+    @include dsp-flex(null, space-between, center);
 }
 
 .db-rev-list {
-    @include dsp-flex(null, null, null, baseline);
+    @include dsp-flex(null, null, baseline);
     text-transform: uppercase;
     font-size: 1.125em;
     font-family: $font-secondary;

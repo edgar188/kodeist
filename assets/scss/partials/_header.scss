@@ -4,7 +4,7 @@ header {
 }
 
 .hdr {
-    @include dsp-flex(null, space-between, null, center);
+    @include dsp-flex(null, space-between, center);
     padding-right: 105px;
     padding-left: 35px;
     &.inner-cont {
@@ -13,7 +13,7 @@ header {
 }
 
 .hdr-list {
-    @include dsp-flex(null, null, null, flex-end);
+    @include dsp-flex(null, null, flex-end);
     color: $color-text-secondary;
     & > li {
         margin-left: 30px;
