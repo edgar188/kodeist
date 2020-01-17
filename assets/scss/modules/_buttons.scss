@@ -6,7 +6,9 @@ button {
 }
 
 .btn-primary {
+    @include ofl-ellipsis;
     padding: 12px 25px;
+    max-width: 185px;
     font-size: 1em;
     text-transform: lowercase;
     font-family: $font-secondary;
@@ -17,7 +19,9 @@ button {
 }
 
 .btn-secondary {
+    @include ofl-ellipsis;
     padding: 8px 25px;
+    max-width: 185px;
     font-size: 0.875em;
     text-transform: lowercase;
     font-family: $font-secondary;
@@ -41,7 +45,9 @@ button {
 }
 
 .btn-default {
+    @include ofl-ellipsis;
     padding: 10px 35px;
+    max-width: 220px;
     font-size: 0.875em;
     text-transform: capitalize;
     font-family: $font-secondary;

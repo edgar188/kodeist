@@ -444,9 +444,9 @@ footer {
 }
 
 .ftr-bat {
-  padding-right: 15px;
-  max-width: 45px;
-  max-height: 45px;
+  margin-right: 15px;
+  max-width: 32px;
+  max-height: 32px;
 }
 
 @media (min-width: 1440px) {
@@ -1659,7 +1659,11 @@ button:hover {
 }
 
 .btn-primary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 12px 25px;
+  max-width: 185px;
   font-size: 1em;
   text-transform: lowercase;
   font-family: "Worksans-semibold", serif;
@@ -1670,7 +1674,11 @@ button:hover {
 }
 
 .btn-secondary {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 8px 25px;
+  max-width: 185px;
   font-size: 0.875em;
   text-transform: lowercase;
   font-family: "Worksans-semibold", serif;
@@ -1696,7 +1704,11 @@ button:hover {
 }
 
 .btn-default {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 10px 35px;
+  max-width: 220px;
   font-size: 0.875em;
   text-transform: capitalize;
   font-family: "Worksans-semibold", serif;
@@ -2399,6 +2411,10 @@ button:hover {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .card-list > li {
+    padding-bottom: 24px;
+  }
 }
 @media (max-width: 1280px) {
   .btn-primary {
@@ -2415,6 +2431,11 @@ button:hover {
 
   .btn-tertiary {
     padding: 5px 15px;
+  }
+
+  .inner-cont {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   .mark-top {
@@ -2486,19 +2507,138 @@ button:hover {
     padding-top: 5px;
   }
 
+  .card-list {
+    margin-top: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .card-list > li {
+    padding-bottom: 22px;
+  }
+
+  .card-diff {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .card-diff > div {
     margin-right: 10px;
   }
 
   .ftr-bat {
+    max-width: 29px;
+    max-height: 29px;
+  }
+}
+@media (max-width: 1024px) {
+  .btn-primary {
+    padding: 10px 16px;
+  }
+
+  .btn-default {
+    padding: 8px 16px;
+  }
+
+  .btn-secondary {
+    padding: 6px 12px;
+  }
+
+  .btn-tertiary {
+    padding: 4px 14px;
+  }
+
+  .inner-cont {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .mark-top {
+    width: 13px;
+    height: 13px;
+    font-size: 12px;
+    bottom: 8px;
+    left: 13px;
+  }
+
+  .hdr.inner-cont {
+    padding-left: 15px;
+  }
+
+  .hdr-list > li {
+    margin-left: 20px;
+  }
+
+  .logo {
+    max-width: 126px;
+    max-height: 24px;
+  }
+
+  .profile {
+    max-width: 24px;
+    max-height: 24px;
+  }
+
+  aside {
+    max-width: 160px;
+    min-width: 160px;
+  }
+  aside > nav {
+    padding-left: 15px;
+  }
+
+  .db-rev-list > li {
+    padding-right: 8px;
+  }
+  .db-rev-list > li > a::before {
+    padding-right: 8px;
+    width: 36px;
+  }
+  .db-rev-list > li > a.active::before {
+    top: -5px;
+    height: 2px;
+  }
+
+  .db-sort-btn > span > span {
+    padding-right: 10px;
+  }
+  .db-sort-btn > span > i {
+    font-size: 1em;
+  }
+
+  .db-card {
+    width: 48%;
+  }
+
+  .card-list {
+    margin-top: 24px;
     padding-right: 15px;
-    max-width: 41px;
-    max-height: 41px;
+    padding-left: 25px;
+  }
+  .card-list > li {
+    padding-bottom: 16px;
+  }
+
+  .card-diff {
+    padding-top: 16px;
+    padding-right: 15px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+  }
+
+  .ftr-bat {
+    max-width: 26px;
+    max-height: 26px;
   }
 }
 @media (max-width: 1280px) {
   body {
     font-size: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 14px;
   }
 }
 

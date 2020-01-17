@@ -27,9 +27,14 @@
     }
     
     // ----------------------- Dashboard -----------------------
+    
     .card-list, .card-diff {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .card-list > li {
+        padding-bottom: 24px;
     }
 
 }

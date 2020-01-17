@@ -1,5 +1,5 @@
 @media (max-width: map-get($resolutions, lg)) {
-
+  
     // ----------------------- Buttons -----------------------
     .btn-primary {
         padding: round(12px * map-get($mlp-values, lg)) round(25px * map-get($mlp-values, lg));
@@ -18,6 +18,10 @@
     }
 
     // ----------------------- Global classes -----------------------
+    .inner-cont {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
     .mark-top {
         width: 15px;
         height: 15px;
@@ -96,15 +100,28 @@
         padding-top: 5px;
     }
 
-    .card-diff > div {
-        margin-right: 10px;
+    .card-list {
+        margin-top: 24px;
+        padding-left: 15px;
+        padding-right: 15px;
+        & > li {
+            padding-bottom: 22px;
+        }
+    }
+
+    .card-diff {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+        & > div {
+            margin-right: 10px;
+        }
     }
 
     // ----------------------- Footer -----------------------
-
     .ftr-bat {
-        padding-right: 15px;
-        max-width: round(45px * map-get($mlp-values, lg));
-        max-height: round(45px * map-get($mlp-values, lg));
+        max-width: round(32px * map-get($mlp-values, lg));
+        max-height: round(32px * map-get($mlp-values, lg));
     }
 }
