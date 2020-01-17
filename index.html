@@ -36,12 +36,15 @@
                     </a>
                 </li>
             </ul>
+            <button class="nav-btn btn-clear" onclick="onNavBtn()">
+                <i class="icon-nav"></i>
+            </button>
         </div>
     </header>
     <!----------------------------- Main ----------------------------->
     <main class="main">
         <!----------------------------- Aside-Nav ----------------------------->
-        <aside class="sect-cont">
+        <aside id="aside" class="sect-cont">
             <nav>
                 <ul class="nav-list">
                     <li>
@@ -69,6 +72,9 @@
                         </a>
                     </li>
                 </ul>
+                <button onclick="onNavBtn()" class="close-btn btn-clear">
+                    <i class="icon-close"></i>
+                </button>
             </nav>
         </aside>
         <!----------------------------- Dashboard ----------------------------->
@@ -82,7 +88,8 @@
                         <a href="#">completed reviews</a>
                     </li>
                 </ul>
-                <button class="btn-primary">add code sample</button>
+                <button class="tab-btn-text btn-primary">add code sample</button>
+                <button class="tab-btn-symbol btn-primary">+</button>
             </div>
             <div class="db-filter">
                 <ul class="db-filter-list">

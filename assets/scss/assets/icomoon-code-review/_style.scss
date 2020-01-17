@@ -60,5 +60,15 @@
     }
 }
 
+.icon-close { 
+    &:before {
+        content: $icon-close;
+    }
+}
 
+.icon-nav { 
+    &:before {
+        content: $icon-nav;
+    }
+}
 

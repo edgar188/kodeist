@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  position: relative;
   color: $color-text-primary;
   font-size: map-get($font-sizes, bs);
   font-family: $font-primary;

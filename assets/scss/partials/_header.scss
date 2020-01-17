@@ -39,5 +39,11 @@ header {
     max-width: 160px;
 }
 
+.nav-btn {
+    display: none;
+    color: map-get($btn-colors, secondary);
+    font-size: 1.4em;
+}
+
 
 

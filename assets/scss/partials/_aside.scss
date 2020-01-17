@@ -4,9 +4,14 @@ aside {
     min-height: 100vh;
     box-shadow: $box-shadow-secondary;
     background-color: $color-light;
+    transition: transform 0.5s;
     & > nav {
         padding-left: 35px;
     }
+}
+
+.close-btn {
+    display: none;
 }
 
 .nav-list {

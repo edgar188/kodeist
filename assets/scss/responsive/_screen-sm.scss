@@ -1,4 +1,128 @@
 @media (max-width: map-get($resolutions, sm)) {
- 
-   
+
+    .nav-btn {
+        display: block;
+    }
+
+    .hdr-list {
+        display: none;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        transform: translateX(100%);
+        max-width: unset;
+
+        &.open {
+            transform: translateX(0);
+        }
+    
+        &.close {
+            transform: translateX(100%);
+        }
+        
+        & > nav {
+            padding-left: 0;
+            .nav-list {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 40px;
+                & > li > a {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        .close-btn {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.2em;
+        }
+    }
+
+    // ====================================================================
+    .inner-cont {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tab-btn-text {
+        display: none;
+    }
+
+    .tab-btn-symbol {
+        display: block;
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+    }
+
+    .db-filter-list > li > button {
+        margin-right: 8px;
+    }
+
+    .btn-default {
+        padding: 8px 12px;
+    }
+
+    .btn-tertiary {
+        padding: 4px 8px;
+    }
+
+    .db-sort-btn > span {
+        padding-right: 5px;
+    }
+
+    .db-sort-btn > i {
+        font-size: 1em;
+    }
+
+    .hdr.inner-cont {
+        padding-left: 10px;
+    }
+
+    .card-issue-link {
+        bottom: 10px;
+    }
+
+    .card-issue-count {
+        width: 32px;
+        height: 32px;
+        line-height: 28px;
+        padding: 2px;
+    }
+
+    .card-diff {
+        & > button {
+            margin-right: 5px;
+        }
+    }
+
+    .card-list {
+        margin-top: 24px;
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+
+    .db-card {
+        width: 47%;
+    }
+
+    .logo {
+        max-width: 108px;
+        max-height: 22px;
+    }
+
+    .ftr-bat {
+        max-width: 22px;
+        max-height: 22px;
+    }
+
 }

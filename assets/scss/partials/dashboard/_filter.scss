@@ -3,14 +3,18 @@
     margin-top: 30px;
  }
  
- .db-filter-list {
+.db-filter-list {
     @include dsp-flex(null, space-between, center);
     & > li > button {
         margin-right: 16px;
     }
- }
+}
+
+.tab-btn-symbol {
+    display: none;
+}
  
- .db-sort-btn {
+.db-sort-btn {
     text-transform: capitalize;
     font-size: 0.875em;
     font-family: $font-secondary;
@@ -23,6 +27,6 @@
         font-size: 1.125em;
         color: $color-dark;
     }
- }
+}
  
  

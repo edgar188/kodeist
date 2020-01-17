@@ -83,6 +83,7 @@ html {
 }
 
 body {
+  position: relative;
   color: #1E272E;
   font-size: 16px;
   font-family: "Worksans-medium", serif;
@@ -145,6 +146,14 @@ a:hover {
   content: "";
 }
 
+.icon-close:before {
+  content: "";
+}
+
+.icon-nav:before {
+  content: "";
+}
+
 header {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -189,6 +198,12 @@ header {
   max-width: 160px;
 }
 
+.nav-btn {
+  display: none;
+  color: #0788C8;
+  font-size: 1.4em;
+}
+
 main {
   background-color: #F4F6F6;
 }
@@ -203,9 +218,14 @@ aside {
   min-height: 100vh;
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  transition: transform 0.5s;
 }
 aside > nav {
   padding-left: 35px;
+}
+
+.close-btn {
+  display: none;
 }
 
 .nav-list {
@@ -283,6 +303,10 @@ aside > nav {
   margin-right: 16px;
 }
 
+.tab-btn-symbol {
+  display: none;
+}
+
 .db-sort-btn {
   text-transform: capitalize;
   font-size: 0.875em;
@@ -342,7 +366,7 @@ aside > nav {
   display: block;
   padding-top: 5px;
   text-transform: capitalize;
-  font-size: 14px;
+  font-size: 0.875em;
   font-family: "Worksans-medium", serif;
   opacity: 0.7;
 }
@@ -2631,6 +2655,178 @@ button:hover {
     max-height: 26px;
   }
 }
+@media (max-width: 768px) {
+  .nav-btn {
+    display: block;
+  }
+
+  .hdr-list {
+    display: none;
+  }
+
+  aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    max-width: unset;
+  }
+  aside.open {
+    transform: translateX(0);
+  }
+  aside.close {
+    transform: translateX(100%);
+  }
+  aside > nav {
+    padding-left: 0;
+  }
+  aside > nav .nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+  }
+  aside > nav .nav-list > li > a {
+    display: flex;
+    justify-content: center;
+  }
+  aside .close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2em;
+  }
+
+  .inner-cont {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tab-btn-text {
+    display: none;
+  }
+
+  .tab-btn-symbol {
+    display: block;
+  }
+
+  .btn-primary {
+    padding: 6px 12px;
+  }
+
+  .db-filter-list > li > button {
+    margin-right: 8px;
+  }
+
+  .btn-default {
+    padding: 8px 12px;
+  }
+
+  .btn-tertiary {
+    padding: 4px 8px;
+  }
+
+  .db-sort-btn > span {
+    padding-right: 5px;
+  }
+
+  .db-sort-btn > i {
+    font-size: 1em;
+  }
+
+  .hdr.inner-cont {
+    padding-left: 10px;
+  }
+
+  .card-issue-link {
+    bottom: 10px;
+  }
+
+  .card-issue-count {
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+    padding: 2px;
+  }
+
+  .card-diff > button {
+    margin-right: 5px;
+  }
+
+  .card-list {
+    margin-top: 24px;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+
+  .db-card {
+    width: 47%;
+  }
+
+  .logo {
+    max-width: 108px;
+    max-height: 22px;
+  }
+
+  .ftr-bat {
+    max-width: 22px;
+    max-height: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .db-card {
+    width: 100%;
+  }
+
+  .db-filter {
+    align-items: flex-start;
+  }
+
+  .db-filter-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .db-filter-list > li > button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .btn-primary {
+    padding: 4px 8px;
+  }
+
+  .db-rev-list {
+    white-space: nowrap;
+    font-size: 1em;
+  }
+
+  .db-rev-list > li {
+    padding-right: 5px;
+  }
+
+  .db-rev-list > li > a::before {
+    padding-right: 5px;
+  }
+
+  .ftr-bat {
+    margin-right: 5px;
+  }
+
+  .btn-tertiary {
+    padding: 4px 12px;
+  }
+
+  .card-issue-link {
+    right: 30px;
+  }
+
+  .db-cards {
+    font-size: 14px;
+  }
+}
 @media (max-width: 1280px) {
   body {
     font-size: 15px;
@@ -2639,6 +2835,16 @@ button:hover {
 @media (max-width: 1024px) {
   body {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    font-size: 12px;
   }
 }
 

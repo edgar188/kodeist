@@ -1,5 +1,54 @@
 @media (max-width:  map-get($resolutions, xs)) {
     
+    .db-card {
+        width: 100%;
+    }
+
+    .db-filter {
+        align-items: flex-start;
+    }
+
+    .db-filter-list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .db-filter-list > li > button {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        padding: 4px 8px;
+    }
+
+    .db-rev-list {
+        white-space: nowrap;
+        font-size: 1em;
+    }
+
+    .db-rev-list > li {
+        padding-right: 5px;
+    }
     
+    .db-rev-list > li > a::before {
+        padding-right: 5px;
+    }
+
+    .ftr-bat {
+        margin-right: 5px;
+    }
+
+    .btn-tertiary {
+        padding: 4px 12px;
+    }
+
+    .card-issue-link {
+        right: 30px;
+    }
+
+    .db-cards {
+        font-size: 14px;
+    }
     
 }
