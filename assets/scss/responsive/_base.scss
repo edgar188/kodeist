@@ -15,9 +15,3 @@
     font-size: map-get($font-sizes, sm);
   }
 }
-
-@media (max-width: map-get($resolutions, xxs)) {
-  body {
-    font-size: map-get($font-sizes, xxs);
-  }
-}

@@ -1,18 +1,50 @@
 @media (max-width: map-get($resolutions, sm)) {
 
-    .nav-btn {
-        display: block;
+    // ------------------ Global classes -------------------------
+
+    .btn-primary {
+        padding: 6px 12px;
+    }
+
+    .btn-default {
+        padding: 8px 12px;
+    }
+
+    .btn-tertiary {
+        padding: 5px 10px;
+    }
+
+    .inner-cont {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    // ---------------------- Header ---------------------------
+
+    .hdr {
+        &.inner-cont {
+            padding-left: 20px;
+            align-items: flex-end;
+        }
     }
 
     .hdr-list {
         display: none;
     }
 
+    .logo {
+        max-width: 120px;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+
+    // ------------------------ Aside-Nav -----------------------------
+
     aside {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
+        @include position(0, 0, null, null, fixed);
+        z-index: $z-index-max;
         transform: translateX(100%);
         max-width: unset;
 
@@ -27,81 +59,41 @@
         & > nav {
             padding-left: 0;
             .nav-list {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
                 margin-top: 40px;
                 & > li > a {
-                    display: flex;
                     justify-content: center;
                 }
             }
         }
-        .close-btn {
-            display: block;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 1.2em;
-        }
     }
 
-    // ====================================================================
-    .inner-cont {
-        padding-left: 10px;
-        padding-right: 10px;
+    .nav-close-btn {
+        @include position(20px, 20px, null, null);
+        display: block;
+        font-size: 1.2em;
     }
+    
+    // -------------------------- Dashboard ---------------------------
 
-    .tab-btn-text {
+    .tab-btn {
         display: none;
     }
 
-    .tab-btn-symbol {
+    .tab-btn-hidden {
         display: block;
-    }
-
-    .btn-primary {
-        padding: 6px 12px;
     }
 
     .db-filter-list > li > button {
         margin-right: 8px;
     }
 
-    .btn-default {
-        padding: 8px 12px;
-    }
+    .db-sort-btn {
+        & > span {
+            padding-right: 5px;
+        }
 
-    .btn-tertiary {
-        padding: 4px 8px;
-    }
-
-    .db-sort-btn > span {
-        padding-right: 5px;
-    }
-
-    .db-sort-btn > i {
-        font-size: 1em;
-    }
-
-    .hdr.inner-cont {
-        padding-left: 10px;
-    }
-
-    .card-issue-link {
-        bottom: 10px;
-    }
-
-    .card-issue-count {
-        width: 32px;
-        height: 32px;
-        line-height: 28px;
-        padding: 2px;
-    }
-
-    .card-diff {
-        & > button {
-            margin-right: 5px;
+        & > i {
+            font-size: 1em;
         }
     }
 
@@ -111,18 +103,25 @@
         padding-left: 20px;
     }
 
-    .db-card {
-        width: 47%;
+    .card-issue-link {
+        bottom: 10px;
     }
 
-    .logo {
-        max-width: 108px;
-        max-height: 22px;
+    .card-issue-count {
+        width: 32px;
+        height: 32px;
+        padding: 2px;
+        line-height: 30px;
     }
 
+    .card-diff {
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+
+    // ----------------------- Footer -----------------------------
     .ftr-bat {
         max-width: 22px;
         max-height: 22px;
     }
-
 }

@@ -13,15 +13,12 @@
         padding: round(10px * map-get($mlp-values, lg)) round(35px * map-get($mlp-values, lg));
     }
 
-    .btn-tertiary {
-        padding: round(5px * map-get($mlp-values, lg)) round(20px * map-get($mlp-values, lg) - 3px);
-    }
-
     // ----------------------- Global classes -----------------------
     .inner-cont {
         padding-left: 35px;
         padding-right: 35px;
     }
+
     .mark-top {
         width: 15px;
         height: 15px;
@@ -68,7 +65,6 @@
     }
 
     // ----------------------- Dashboard -----------------------
-
     .db-rev-list > li {
         padding-right: 20px;
         & > a.active::before {
@@ -86,7 +82,7 @@
     }
 
     .card-issue-link {
-        right: 20px;
+        right: 30px;
         bottom: 15px;
     }
 

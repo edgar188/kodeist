@@ -1,5 +1,6 @@
 .db-tab {
     @include dsp-flex(null, space-between, center);
+    position: relative;
 }
 
 .db-rev-list {
@@ -34,3 +35,6 @@
     }
 }
 
+.tab-btn-hidden {
+    display: none;
+}

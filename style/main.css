@@ -200,8 +200,8 @@ header {
 
 .nav-btn {
   display: none;
-  font-size: 1.5em;
   color: #0788C8;
+  font-size: 1.4em;
 }
 
 main {
@@ -224,6 +224,10 @@ aside > nav {
   padding-left: 35px;
 }
 
+.close-btn {
+  display: none;
+}
+
 .nav-list {
   font-size: 1em;
   text-transform: capitalize;
@@ -244,15 +248,10 @@ aside > nav {
   padding-right: 20px;
 }
 
-.nav-close-btn {
-  display: none;
-}
-
 .db-tab {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .db-rev-list {
@@ -288,8 +287,19 @@ aside > nav {
   background-color: #169CDF;
 }
 
-.tab-btn-hidden {
-  display: none;
+.tab-btn-hdn-wrap {
+  position: relative;
+}
+
+.tab-btn-hdn-txt {
+  position: absolute;
+  right: 0px;
+  top: 23px;
+  background: #fff;
+  border: 1px solid silver;
+  padding: 4px;
+  border-radius: 4px;
+  border-right: none;
 }
 
 .db-filter {
@@ -2458,6 +2468,10 @@ button:hover {
     padding: 9px 32px;
   }
 
+  .btn-tertiary {
+    padding: 5px 15px;
+  }
+
   .inner-cont {
     padding-left: 35px;
     padding-right: 35px;
@@ -2518,7 +2532,7 @@ button:hover {
   }
 
   .card-issue-link {
-    right: 30px;
+    right: 20px;
     bottom: 15px;
   }
 
@@ -2567,6 +2581,10 @@ button:hover {
 
   .btn-secondary {
     padding: 6px 12px;
+  }
+
+  .btn-tertiary {
+    padding: 4px 14px;
   }
 
   .inner-cont {
@@ -2620,10 +2638,6 @@ button:hover {
     height: 2px;
   }
 
-  .db-filter {
-    align-items: flex-end;
-  }
-
   .db-sort-btn > span > span {
     padding-right: 10px;
   }
@@ -2632,8 +2646,7 @@ button:hover {
   }
 
   .db-card {
-    width: 47%;
-    margin-bottom: 6%;
+    width: 48%;
   }
 
   .card-list {
@@ -2658,44 +2671,18 @@ button:hover {
   }
 }
 @media (max-width: 768px) {
-  .btn-primary {
-    padding: 6px 12px;
-  }
-
-  .btn-default {
-    padding: 8px 12px;
-  }
-
-  .btn-tertiary {
-    padding: 5px 10px;
-  }
-
-  .inner-cont {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .hdr.inner-cont {
-    padding-left: 20px;
-    align-items: flex-end;
+  .nav-btn {
+    display: block;
   }
 
   .hdr-list {
     display: none;
   }
 
-  .logo {
-    max-width: 120px;
-  }
-
-  .nav-btn {
-    display: block;
-  }
-
   aside {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 100;
     transform: translateX(100%);
     max-width: unset;
@@ -2710,43 +2697,62 @@ button:hover {
     padding-left: 0;
   }
   aside > nav .nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-top: 40px;
   }
   aside > nav .nav-list > li > a {
+    display: flex;
     justify-content: center;
   }
-
-  .nav-close-btn {
+  aside .close-btn {
+    display: block;
     position: absolute;
     top: 20px;
     right: 20px;
-    display: block;
     font-size: 1.2em;
   }
 
-  .tab-btn {
+  .inner-cont {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .tab-btn-text {
     display: none;
   }
 
-  .tab-btn-hidden {
+  .tab-btn-symbol {
     display: block;
+  }
+
+  .btn-primary {
+    padding: 6px 12px;
   }
 
   .db-filter-list > li > button {
     margin-right: 8px;
   }
 
+  .btn-default {
+    padding: 8px 12px;
+  }
+
+  .btn-tertiary {
+    padding: 4px 8px;
+  }
+
   .db-sort-btn > span {
     padding-right: 5px;
   }
+
   .db-sort-btn > i {
     font-size: 1em;
   }
 
-  .card-list {
-    margin-top: 24px;
-    padding-right: 10px;
-    padding-left: 20px;
+  .hdr.inner-cont {
+    padding-left: 10px;
   }
 
   .card-issue-link {
@@ -2756,13 +2762,27 @@ button:hover {
   .card-issue-count {
     width: 32px;
     height: 32px;
+    line-height: 28px;
     padding: 2px;
-    line-height: 30px;
   }
 
-  .card-diff {
+  .card-diff > button {
+    margin-right: 5px;
+  }
+
+  .card-list {
+    margin-top: 24px;
+    padding-right: 10px;
     padding-left: 20px;
-    padding-right: 15px;
+  }
+
+  .db-card {
+    width: 47%;
+  }
+
+  .logo {
+    max-width: 108px;
+    max-height: 22px;
   }
 
   .ftr-bat {
@@ -2771,117 +2791,55 @@ button:hover {
   }
 }
 @media (max-width: 480px) {
-  .btn-primary {
-    padding: 4px 8px;
-  }
-
-  .btn-default {
-    padding: 6px 10px;
-  }
-
-  .sect-cont-wrap {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .sect-cont {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .logo {
-    max-width: 110px;
-    max-height: 20px;
-  }
-
-  .db-tab {
-    align-items: flex-end;
-  }
-
-  .db-rev-list {
-    white-space: nowrap;
-    font-size: 1em;
-  }
-  .db-rev-list > li {
-    padding-right: 5px;
-  }
-  .db-rev-list > li > a::before {
-    padding-right: 5px;
+  .db-card {
+    width: 100%;
   }
 
   .db-filter {
-    align-items: flex-end;
-    margin-top: 10px;
+    align-items: flex-start;
   }
 
   .db-filter-list {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
+
   .db-filter-list > li > button {
     margin-right: 10px;
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  .db-card {
-    width: 100%;
+  .btn-primary {
+    padding: 4px 8px;
   }
 
-  .card-list {
-    margin-top: 20px;
+  .db-rev-list {
+    white-space: nowrap;
+    font-size: 1em;
   }
-  .card-list > li {
-    padding-bottom: 10px;
+
+  .db-rev-list > li {
+    padding-right: 5px;
+  }
+
+  .db-rev-list > li > a::before {
+    padding-right: 5px;
+  }
+
+  .ftr-bat {
+    margin-right: 5px;
+  }
+
+  .btn-tertiary {
+    padding: 4px 12px;
   }
 
   .card-issue-link {
     right: 30px;
   }
 
-  .card-diff {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .btn-del {
-    top: -5px;
-  }
-
-  .ftr-bat {
-    margin-right: 10px;
-  }
-}
-@media (max-width: 360px) {
-  .inner-cont {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .hdr.inner-cont {
-    padding-left: 10px;
-    padding-right: 15px;
-  }
-
-  .logo {
-    max-width: 95px;
-  }
-
-  .nav-btn {
-    font-size: 1.4em;
-  }
-
-  .db-rev-list {
-    text-transform: capitalize;
-  }
-
-  .ftr-content-wrap {
-    font-size: 0.9em;
-  }
-
-  .ftr-bat {
-    max-width: 20px;
-    max-height: 20px;
+  .db-cards {
+    font-size: 14px;
   }
 }
 @media (max-width: 1280px) {
@@ -2897,6 +2855,11 @@ button:hover {
 @media (max-width: 768px) {
   body {
     font-size: 13px;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    font-size: 12px;
   }
 }
 

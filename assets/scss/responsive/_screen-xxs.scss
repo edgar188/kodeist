@@ -1,4 +1,39 @@
 @media (max-width:  map-get($resolutions, xxs)) {
     
+    // -------------------- Global classes -------------------------
+    .inner-cont {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    // ------------------------ Header ----------------------------
+    .hdr {
+        &.inner-cont {
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+    }
+
+    .logo {
+        max-width: 95px;
+    }
+
+    .nav-btn {
+        font-size: 1.4em;
+    }
+
+    .db-rev-list {
+        text-transform: capitalize;
+    }
+
+    // ---------------------- Footer --------------------------
+    .ftr-content-wrap {
+        font-size: 0.9em;
+    }
     
+    .ftr-bat {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
 }

@@ -1,5 +1,6 @@
 @media (max-width: map-get($resolutions, md)) {
     
+    // ----------------------- Global classes -----------------------
     .btn-primary {
         padding: 10px 16px;
     }
@@ -11,12 +12,7 @@
     .btn-secondary {
         padding: 6px 12px;
     }
-
-    .btn-tertiary {
-        padding: 4px 14px;
-    }
-
-    // ----------------------- Global classes -----------------------
+    
     .inner-cont {
         padding-left: 30px;
         padding-right: 30px;
@@ -75,6 +71,10 @@
         }
     }
 
+    .db-filter {
+        align-items: flex-end;
+    }
+
     .db-sort-btn > span {
         & > span {
             padding-right: 10px;
@@ -85,7 +85,8 @@
     }
 
     .db-card {
-        width: 48%;
+        width: 47%;
+        margin-bottom: 6%;
     }
 
     .card-list {
