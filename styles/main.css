@@ -472,7 +472,7 @@ footer {
   justify-content: center;
 }
 
-.ftr-bat {
+.ftr-img {
   margin-right: 15px;
   max-width: 32px;
   max-height: 32px;
@@ -2551,7 +2551,7 @@ button:hover {
     margin-right: 10px;
   }
 
-  .ftr-bat {
+  .ftr-img {
     max-width: 29px;
     max-height: 29px;
   }
@@ -2652,7 +2652,7 @@ button:hover {
     padding-left: 25px;
   }
 
-  .ftr-bat {
+  .ftr-img {
     max-width: 26px;
     max-height: 26px;
   }
@@ -2765,7 +2765,7 @@ button:hover {
     padding-right: 15px;
   }
 
-  .ftr-bat {
+  .ftr-img {
     max-width: 22px;
     max-height: 22px;
   }
@@ -2848,7 +2848,7 @@ button:hover {
     top: -5px;
   }
 
-  .ftr-bat {
+  .ftr-img {
     margin-right: 10px;
   }
 }
@@ -2879,7 +2879,7 @@ button:hover {
     font-size: 0.9em;
   }
 
-  .ftr-bat {
+  .ftr-img {
     max-width: 20px;
     max-height: 20px;
   }

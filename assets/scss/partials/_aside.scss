@@ -4,7 +4,7 @@ aside {
     min-height: 100vh;
     box-shadow: $box-shadow-secondary;
     background-color: $color-light;
-    transition: transform 0.5s;
+    transition: transform $trns-duration-md;
     & > nav {
         padding-left: 35px;
     }
