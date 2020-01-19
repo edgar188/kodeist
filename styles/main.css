@@ -248,6 +248,23 @@ aside > nav {
   display: none;
 }
 
+footer {
+  box-shadow: 0px 0px 10px #aaaaaa;
+  background-color: #fff;
+}
+
+.ftr-content-wrap {
+  font-size: 1em;
+  text-transform: capitalize;
+  justify-content: center;
+}
+
+.ftr-img {
+  margin-right: 15px;
+  max-width: 32px;
+  max-height: 32px;
+}
+
 .db-tab {
   display: flex;
   justify-content: space-between;
@@ -459,23 +476,6 @@ aside > nav {
 }
 .card-diff > div {
   width: calc(100% - 100px);
-}
-
-footer {
-  box-shadow: 0px 0px 10px #aaaaaa;
-  background-color: #fff;
-}
-
-.ftr-content-wrap {
-  font-size: 1em;
-  text-transform: capitalize;
-  justify-content: center;
-}
-
-.ftr-img {
-  margin-right: 15px;
-  max-width: 32px;
-  max-height: 32px;
 }
 
 @media (min-width: 1440px) {
