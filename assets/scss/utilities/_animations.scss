@@ -35,6 +35,14 @@
     100% {top: calc-val(30);}
 }
 
+@keyframes bat-cont-central-move {
+    0%   {top: 0;}
+    25%  {top: 25%;}
+    50%  {top: 50%;}
+    75%  {top: 75%;}
+    100% {top: calc-val(30);}
+}
+
 // Header logo rotate
 @keyframes logo-rotate {
     0% {transform: rotate(0deg);}
@@ -54,12 +62,12 @@
 }
 
 // Button primary shadow animation
-@keyframes btn-primary-shadow {
-    0% {box-shadow: unset}
-    50% {box-shadow: $box-shdw-anim-primary}
-    75% {box-shadow: $box-shdw-anim-secondary}
-    100% {box-shadow: $box-shdw-anim-tertiary}
-}
+// @keyframes btn-primary-shadow {
+//     0% {box-shadow: unset}
+//     50% {box-shadow: $box-shdw-anim-primary}
+//     75% {box-shadow: $box-shdw-anim-secondary}
+//     100% {box-shadow: $box-shdw-anim-tertiary}
+// }
 
 // Dashboard cards opacity animation
 @keyframes cards-opacity {

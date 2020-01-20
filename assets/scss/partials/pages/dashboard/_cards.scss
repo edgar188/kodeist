@@ -1,7 +1,6 @@
 .db-cards {
     @include dsp-flex(wrap, space-between);
     margin-top: 24px;
-    // transition: opacity $trns-duration-md;
     animation: null $anim-duration-sm null null 1 alternate forwards;
     animation-name: cards-opacity;
 }
@@ -9,6 +8,7 @@
 .db-card {
     width: 23.77%;
     margin-bottom: 24px;
+    overflow: hidden;
     background-color: $color-light;
     box-shadow: $box-shadow-tertiary;
     border-radius: $br-md;
