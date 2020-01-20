@@ -20,6 +20,8 @@ body {
 }
 
 a {
+  transition: opacity $trns-duration-sm;
+
   &:hover {
     opacity: $opacity-primary;
   }

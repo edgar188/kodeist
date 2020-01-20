@@ -13,4 +13,10 @@ footer {
     margin-right: 15px;
     max-width: 32px;
     max-height: 32px;
+    animation-name: bat-rotate;
+    animation-duration: $anim-duration-md;
+    animation-iteration-count: infinite;
+    &:hover {
+        animation-play-state: paused;       
+    }
 }

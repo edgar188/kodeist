@@ -1,0 +1,82 @@
+// Rotating bat in the footer section
+@keyframes bat-rotate {
+    0%   {transform: rotate(0deg);}
+    20%  {transform: rotate(-45deg);}
+    40%  {transform: rotate(45deg);}
+    60%  {transform: rotate(-90deg);}
+    80% {transform: rotate(90deg);}
+    100% {transform: rotate(360deg);}
+}
+
+// Left bat in the aside section
+@keyframes bat-left-move {
+    0%   {top: 0; left: 0;}
+    25%  {top: 25%; left: 100%; transform: translateX(-100%);}
+    50%  {top: 50%; left: 0; transform: translateX(0);}
+    75%  {top: 75%; left: 100%; transform: translateX(-100%);}
+    100% {top: calc-val(30); left: 0; transform: translateX(0);}
+}
+
+// Right bat in the aside section
+@keyframes bat-right-move {
+    0%   {top: 0; right: 0;}
+    25%  {top: 25%; right: 100%; transform: translateX(100%);}
+    50%  {top: 50%; right: 0; transform: translateX(0);}
+    75%  {top: 75%; right: 100%; transform: translateX(100%);}
+    100% {top: calc-val(30); right: 0; transform: translateX(0);}
+}
+
+// Central bat in the aside section
+@keyframes bat-central-move {
+    0%   {top: 0;}
+    25%  {top: 25%;}
+    50%  {top: 50%;}
+    75%  {top: 75%;}
+    100% {top: calc-val(30);}
+}
+
+// Header logo rotate
+@keyframes logo-rotate {
+    0% {transform: rotate(0deg);}
+    25%  {transform: rotate(5deg);}
+    50%  {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+// Cards issue count rotate
+@keyframes issue-count-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+// Button primary shadow animation
+@keyframes btn-primary-shadow {
+    0% {box-shadow: unset}
+    50% {box-shadow: $box-shdw-anim-primary}
+    75% {box-shadow: $box-shdw-anim-secondary}
+    100% {box-shadow: $box-shdw-anim-tertiary}
+}
+
+// Dashboard cards opacity animation
+@keyframes cards-opacity {
+    from {opacity: $opacity-none}
+    to{opacity: $opacity-default}
+}
+
+// Dashboard cards opacity animation
+@keyframes cards-opacity {
+    from {opacity: $opacity-none}
+    to{opacity: $opacity-default}
+}
+
+// Header notification icon animation
+@keyframes hdr-notification {
+    0% {transform: rotate(15deg);}
+    25%  {transform: rotate(0deg);}
+    50%  {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+}

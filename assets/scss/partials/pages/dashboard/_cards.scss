@@ -1,6 +1,9 @@
 .db-cards {
     @include dsp-flex(wrap, space-between);
     margin-top: 24px;
+    // transition: opacity $trns-duration-md;
+    animation: null $anim-duration-sm null null 1 alternate forwards;
+    animation-name: cards-opacity;
 }
 
 .db-card {
@@ -9,6 +12,7 @@
     background-color: $color-light;
     box-shadow: $box-shadow-tertiary;
     border-radius: $br-md;
+    transition: box-shadow $trns-duration-sm;
     &:hover {
         box-shadow: $box-shadow-tertiary-hover;
     }
@@ -98,6 +102,8 @@
     font-family: $font-secondary;
     background-color: $color-bg-primary;
     border-radius: $br-rounded;
+    animation: null $anim-duration-lg null null infinite alternate forwards;
+    animation-name: issue-count-rotate;
 }
 
 .card-issue-text {

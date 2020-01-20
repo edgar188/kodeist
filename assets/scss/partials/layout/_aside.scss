@@ -1,4 +1,5 @@
 aside {
+    position: relative;
     max-width: 240px;
     min-width: 240px;
     min-height: 100vh;
@@ -33,4 +34,31 @@ aside {
 .nav-close-btn {
     display: none;
 }
+
+.moving-bat {
+    max-width: 24px;
+    max-height: 24px;
+    animation: null $anim-duration-lg null null infinite alternate forwards; 
+
+    &.left {
+        @include position(0, null, null, 0);
+        animation-name: bat-left-move;
+    }
+
+    &.right {
+        @include position(0, 0);
+        animation-name: bat-right-move;
+    }
+
+    &.central {
+        @include position(0, null, null, 50%);
+        transform: translateX(-50%);
+        animation-name: bat-central-move;
+    }
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
 
