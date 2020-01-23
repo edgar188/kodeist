@@ -1,0 +1,28 @@
+// @media (max-width: map-get($resolutions, lg)) {
+//     .hdr {
+//         &.inner-cont {
+//             padding-left: 20px;
+//         }
+//     }
+
+//     .logo {
+//         max-width: round(158px * map-get($mlp-values, lg));
+//         max-height: round(30px * map-get($mlp-values, lg));
+//     }
+
+//     .profile {
+//         max-width: round(30px * map-get($mlp-values, lg));
+//         max-height: round(30px * map-get($mlp-values, lg));
+//     }
+
+//     .hdr-btn-wrapper {
+//         margin-right: 5px;
+//     }
+
+//     .hdr-list {
+//         & > li {
+//             margin-left: 25px;
+//         }
+//     }
+// }
+
