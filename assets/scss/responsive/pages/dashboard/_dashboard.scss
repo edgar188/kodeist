@@ -1,0 +1,217 @@
+@media (max-width: map-get($resolutions, xl)) {
+    .card-list, .card-diff {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-list > li {
+        padding-bottom: 24px;
+    }
+}
+
+@media (max-width: map-get($resolutions, lg)) {
+    .db-rev-list > li {
+        padding-right: 20px;
+        & > a.active::before {
+            padding-right: 20px;
+            width: 36px;
+        }
+    }
+
+    .db-card {
+        width: 31%;
+    }
+
+    .card-list {
+        margin-top: 28px;
+    }
+
+    .card-issue-link {
+        right: 30px;
+        bottom: 15px;
+    }
+
+    .card-issue-count {
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+    }
+
+    .card-issue-text {
+        padding-top: 5px;
+    }
+
+    .card-list {
+        margin-top: 24px;
+        padding-left: 15px;
+        padding-right: 15px;
+        & > li {
+            padding-bottom: 22px;
+        }
+    }
+
+    .card-diff {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 15px;
+        padding-right: 15px;
+        & > div {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: map-get($resolutions, md)) {
+    .db-rev-list > li {
+        padding-right: 8px;
+        & > a {
+            &::before {
+                padding-right: 8px;
+                width: 36px;
+            }
+            &.active::before {
+                top: -5px;
+                height: 2px;
+            }
+        }
+    }
+
+    .db-filter {
+        align-items: flex-end;
+    }
+
+    .db-sort-btn > span {
+        & > span {
+            padding-right: 10px;
+        }
+        & > i {
+            font-size: 1em;
+        }
+    }
+
+    .db-card {
+        width: 47%;
+        margin-bottom: 6%;
+    }
+
+    .card-list {
+        margin-top: 24px;
+        padding-right: 15px;
+        padding-left: 25px;
+        & > li {
+            padding-bottom: 16px;
+        }
+    }
+
+    .card-diff {
+        padding-top: 16px;
+        padding-right: 15px;
+        padding-bottom: 16px;
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+    .tab-btn {
+        display: none;
+    }
+
+    .tab-btn-hidden {
+        display: block;
+    }
+
+    .db-filter-list > li > button {
+        margin-right: 8px;
+    }
+
+    .db-sort-btn {
+        & > span {
+            padding-right: 5px;
+        }
+
+        & > i {
+            font-size: 1em;
+        }
+    }
+
+    .card-list {
+        margin-top: 24px;
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+
+    .card-issue-link {
+        bottom: 10px;
+    }
+
+    .card-issue-count {
+        width: 32px;
+        height: 32px;
+        padding: 2px;
+        line-height: 30px;
+    }
+
+    .card-diff {
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: map-get($resolutions, xs)) {
+    .db-tab {
+        align-items: flex-end;
+    }
+
+    .db-rev-list {
+        white-space: nowrap;
+        font-size: 1em;
+        & > li {
+            padding-right: 5px;
+            & > a {
+                &::before {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+
+    .db-filter {
+        align-items: flex-end;
+        margin-top: 10px;
+    }
+
+    .db-filter-list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        & > li > button {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+    }
+
+    .db-card {
+        width: 100%;
+    }
+
+    .card-list {
+        margin-top: 20px;
+        & > li {
+            padding-bottom: 10px;
+        }
+    }
+
+    .card-issue-link {
+        right: 30px;
+    }
+
+    .card-diff {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .btn-del {
+        top: -5px;
+    }
+}
+
