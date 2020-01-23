@@ -1,6 +1,8 @@
 header {
     box-shadow: $box-shadow-primary;
     background-color: $color-light;
+    position: relative;
+    z-index: $z-index-max;
 }
 
 .hdr {
@@ -37,7 +39,7 @@ header {
 
 .logo {
     max-width: 160px;
-    animation: null $anim-duration-md null null infinite null forwards;
+    animation: null $anim-duration-lg null null infinite null forwards;
     animation-name: logo-rotate;
 }
 
@@ -50,6 +52,9 @@ header {
 .icon-notification {
     animation: null $anim-duration null null infinite alternate forwards;
     animation-name: hdr-notification;
+    &:hover {
+        animation-play-state: paused;
+    }
 } 
 
 

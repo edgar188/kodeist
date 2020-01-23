@@ -1,8 +1,7 @@
 .db-cards {
     @include dsp-flex(wrap, space-between);
     margin-top: 24px;
-    animation: null $anim-duration-sm null null 1 alternate forwards;
-    animation-name: cards-opacity;
+    animation: cards-opacity $anim-duration-sm ease-out; 
 }
 
 .db-card {
@@ -102,8 +101,6 @@
     font-family: $font-secondary;
     background-color: $color-bg-primary;
     border-radius: $br-rounded;
-    animation: null $anim-duration-lg null null infinite alternate forwards;
-    animation-name: issue-count-rotate;
 }
 
 .card-issue-text {

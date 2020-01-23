@@ -3,6 +3,7 @@ aside {
     max-width: 240px;
     min-width: 240px;
     min-height: 100vh;
+    overflow: hidden;
     box-shadow: $box-shadow-secondary;
     background-color: $color-light;
     transition: transform $trns-duration-md;
@@ -36,23 +37,26 @@ aside {
 }
 
 .moving-bat {
-    max-width: 24px;
-    max-height: 24px;
-    animation: null $anim-duration-lg null null infinite alternate forwards; 
+    height: 100%;
+    animation: null $anim-duration-lg linear null infinite alternate;
+
+    & > img {
+        max-width: 24px;
+        max-height: 24px;
+    }
 
     &.left {
-        @include position(0, null, null, 0);
-        animation-name: bat-left-move;
+        @include position();
+        animation-name: bat-move-left;
     }
 
     &.right {
-        @include position(0, 0);
-        animation-name: bat-right-move;
+        @include position();
+        animation-name: bat-move-right;
     }
 
     &.central {
         @include position(0, null, null, 50%);
-        transform: translateX(-50%);
         animation-name: bat-central-move;
     }
 
@@ -63,8 +67,9 @@ aside {
 
 
 .mov-bat-cont {
+    @include position();
     height: 100%;
     display: block;
-    position: absolute;
+    
 }
 

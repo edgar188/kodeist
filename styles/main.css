@@ -47,90 +47,58 @@
     transform: rotate(360deg);
   }
 }
-@keyframes bat-left-move {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  25% {
-    top: 25%;
-    left: 100%;
-    transform: translateX(-100%);
-  }
-  50% {
-    top: 50%;
-    left: 0;
-    transform: translateX(0);
-  }
-  75% {
-    top: 75%;
-    left: 100%;
-    transform: translateX(-100%);
-  }
-  100% {
-    top: calc(100% - 30px);
-    left: 0;
-    transform: translateX(0);
-  }
-}
-@keyframes bat-right-move {
-  0% {
-    top: 0;
-    right: 0;
-  }
-  25% {
-    top: 25%;
-    right: 100%;
-    transform: translateX(100%);
-  }
-  50% {
-    top: 50%;
-    right: 0;
-    transform: translateX(0);
-  }
-  75% {
-    top: 75%;
-    right: 100%;
-    transform: translateX(100%);
-  }
-  100% {
-    top: calc(100% - 30px);
-    right: 0;
-    transform: translateX(0);
-  }
-}
 @keyframes bat-central-move {
-  0% {
-    top: 0;
+  from {
+    transform: translate(-50%, 0);
   }
-  25% {
-    top: 25%;
-  }
-  50% {
-    top: 50%;
-  }
-  75% {
-    top: 75%;
-  }
-  100% {
-    top: calc(100% - 30px);
+  to {
+    transform: translate(-50%, calc(100% - 30px));
   }
 }
-@keyframes bat-cont-central-move {
+@keyframes bat-move-left {
   0% {
     top: 0;
+    left: 0;
   }
   25% {
-    top: 25%;
+    left: 100%;
+    transform: translateX(-100%);
   }
   50% {
-    top: 50%;
+    left: 0;
+    transform: translateX(0);
   }
   75% {
-    top: 75%;
+    left: 100%;
+    transform: translateX(-100%);
   }
   100% {
     top: calc(100% - 30px);
+    left: 0;
+    transform: translateX(0);
+  }
+}
+@keyframes bat-move-right {
+  0% {
+    top: 0;
+    right: 0;
+  }
+  25% {
+    right: 100%;
+    transform: translateX(100%);
+  }
+  50% {
+    right: 0;
+    transform: translateX(0);
+  }
+  75% {
+    right: 100%;
+    transform: translateX(100%);
+  }
+  100% {
+    top: calc(100% - 30px);
+    right: 0;
+    transform: translateX(0);
   }
 }
 @keyframes logo-rotate {
@@ -138,29 +106,13 @@
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(5deg);
+    transform: rotate(-60deg);
   }
   50% {
-    transform: rotate(-5deg);
+    transform: rotate(60deg);
   }
   100% {
-    transform: rotate(0deg);
-  }
-}
-@keyframes issue-count-rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
     transform: rotate(-360deg);
-  }
-}
-@keyframes cards-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes cards-opacity {
@@ -173,13 +125,13 @@
 }
 @keyframes hdr-notification {
   0% {
-    transform: rotate(15deg);
+    transform: rotate(5deg);
   }
   25% {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
   }
   100% {
     transform: rotate(0deg);
@@ -318,6 +270,8 @@ a:hover {
 header {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  position: relative;
+  z-index: 100;
 }
 
 .hdr {
@@ -357,7 +311,7 @@ header {
 
 .logo {
   max-width: 160px;
-  animation: 6s infinite forwards;
+  animation: 10s infinite forwards;
   animation-name: logo-rotate;
 }
 
@@ -370,6 +324,9 @@ header {
 .icon-notification {
   animation: 0.3s infinite alternate forwards;
   animation-name: hdr-notification;
+}
+.icon-notification:hover {
+  animation-play-state: paused;
 }
 
 main {
@@ -385,6 +342,7 @@ aside {
   max-width: 240px;
   min-width: 240px;
   min-height: 100vh;
+  overflow: hidden;
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: transform 0.5s;
@@ -418,27 +376,25 @@ aside > nav {
 }
 
 .moving-bat {
+  height: 100%;
+  animation: 10s linear infinite alternate;
+}
+.moving-bat > img {
   max-width: 24px;
   max-height: 24px;
-  animation: 10s infinite alternate forwards;
 }
 .moving-bat.left {
   position: absolute;
-  top: 0;
-  left: 0;
-  animation-name: bat-left-move;
+  animation-name: bat-move-left;
 }
 .moving-bat.right {
   position: absolute;
-  top: 0;
-  right: 0;
-  animation-name: bat-right-move;
+  animation-name: bat-move-right;
 }
 .moving-bat.central {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
   animation-name: bat-central-move;
 }
 .moving-bat:hover {
@@ -446,9 +402,9 @@ aside > nav {
 }
 
 .mov-bat-cont {
+  position: absolute;
   height: 100%;
   display: block;
-  position: absolute;
 }
 
 footer {
@@ -558,8 +514,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 24px;
-  animation: 3s 1 alternate forwards;
-  animation-name: cards-opacity;
+  animation: cards-opacity 3s ease-out;
 }
 
 .db-card {
@@ -671,8 +626,6 @@ footer {
   font-family: "Worksans-semibold", serif;
   background-color: #F4F6F6;
   border-radius: 50%;
-  animation: 10s infinite alternate forwards;
-  animation-name: issue-count-rotate;
 }
 
 .card-issue-text {
