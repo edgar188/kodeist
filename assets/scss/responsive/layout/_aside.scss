@@ -1,0 +1,67 @@
+@media (max-width: map-get($resolutions, xl)) {
+    aside {
+        max-width: 200px;
+        min-width: 200px;
+        & > nav {
+            padding-left: 25px;
+        }
+    }
+
+    .nav-list > li > a > i {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: map-get($resolutions, lg)) {
+    aside {
+        max-width: 180px;
+        min-width: 180px;
+        & > nav {
+            padding-left: 20px;
+        }
+    }
+}
+
+@media (max-width: map-get($resolutions, md)) {
+    aside {
+        max-width: 160px;
+        min-width: 160px;
+        & > nav {
+            padding-left: 15px;
+        }
+    }    
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+    aside {
+        @include position(0, 0, null, null, fixed);
+        z-index: $z-index-max;
+        transform: translateX(100%);
+        max-width: unset;
+
+        &.open {
+            transform: translateX(0);
+        }
+    
+        &.close {
+            transform: translateX(100%);
+        }
+        
+        & > nav {
+            padding-left: 0;
+            .nav-list {
+                margin-top: 40px;
+                & > li > a {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .nav-close-btn {
+        @include position(20px, 20px);
+        display: block;
+        font-size: 1.2em;
+    }
+}
+

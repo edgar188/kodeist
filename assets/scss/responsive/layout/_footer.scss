@@ -1,0 +1,40 @@
+@media (max-width: map-get($resolutions, lg)) {
+    .ftr-img {
+        max-width: round(32px * map-get($mlp-values, lg));
+        max-height: round(32px * map-get($mlp-values, lg));
+    }
+}
+
+@media (max-width: map-get($resolutions, md)) {
+    .ftr-img {
+        max-width: round(32px * map-get($mlp-values, md));
+        max-height: round(32px * map-get($mlp-values, md));
+    }
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+    .ftr-img {
+        max-width: 22px;
+        max-height: 22px;
+    }
+}
+
+@media (max-width: map-get($resolutions, xs)) {
+    .ftr-img {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: map-get($resolutions, xxs)) {
+    .ftr-content-wrap {
+        font-size: 0.9em;
+    }
+    
+    .ftr-img {
+        max-width: 20px;
+        max-height: 20px;
+    }    
+}
+
+
+

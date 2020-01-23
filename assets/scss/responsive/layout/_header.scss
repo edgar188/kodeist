@@ -1,3 +1,11 @@
+@media (max-width: map-get($resolutions, xl)) {
+    .hdr {
+        &.inner-cont {
+            padding-left: 25px;
+        }
+    }
+}
+
 @media (max-width: map-get($resolutions, lg)) {
     .hdr {
         &.inner-cont {
@@ -23,6 +31,78 @@
         & > li {
             margin-left: 25px;
         }
+    }
+}
+
+@media (max-width: map-get($resolutions, md)) {
+    .hdr {
+        &.inner-cont {
+            padding-left: 15px;
+        }
+    }
+
+    .hdr-list > li {
+        margin-left: 20px;
+    }
+
+    .logo {
+        max-width: round(158px * map-get($mlp-values, md));
+        max-height: round(30px * map-get($mlp-values, md));
+    }
+    
+    .profile {
+        max-width: round(30px * map-get($mlp-values, md));
+        max-height: round(30px * map-get($mlp-values, md));
+    }
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+    .hdr {
+        &.inner-cont {
+            padding-left: 20px;
+            align-items: flex-end;
+        }
+    }
+
+    .hdr-list {
+        display: none;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+}
+
+@media (max-width:  map-get($resolutions, xs)) {
+    .logo {
+        max-width: 110px;
+        
+        max-height: 20px;
+    }
+}
+
+@media (max-width:  map-get($resolutions, xxs)) {
+    .hdr {
+        &.inner-cont {
+            padding-left: 10px;
+            padding-right: 15px;
+        }
+    }
+
+    .logo {
+        max-width: 95px;
+    }
+
+    .nav-btn {
+        font-size: 1.4em;
+    }
+
+    .db-rev-list {
+        text-transform: capitalize;
     }
 }
 
