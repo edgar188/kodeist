@@ -99,8 +99,13 @@
     line-height: 38px;
     font-size: 1em;
     font-family: $font-secondary;
-    background-color: $color-bg-primary;
+    color: $color-light;
+    background-color: $color-bg-danger;
     border-radius: $br-rounded;
+    &:not(.danger) {
+        color: $color-text-primary;
+        background-color: $color-bg-primary;
+    }
 }
 
 .card-issue-text {

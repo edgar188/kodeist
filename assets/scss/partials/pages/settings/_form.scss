@@ -1,0 +1,21 @@
+.setg-form {
+    margin-top: 24px;
+    & input, & textarea {
+        max-width: 100%;
+    }
+}
+
+.setg-label {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    &.required {
+        &::after {
+            content: "*";
+            @include position(-10px);
+            color: $color-bg-danger;
+            font-size: 1.5em;
+            padding-left: 5px;
+        }
+    }
+}

@@ -1,5 +1,8 @@
 main {
     background-color: $color-bg-primary;
+    & > section {
+        min-height: 100vh;
+    }
 }
 
 .main {

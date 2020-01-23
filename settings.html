@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kodeist</title>
+    <link rel="icon" href="./assets/img/bat.png">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <script async defer src="./assets/js/index.js"></script>
+</head>
+
+<body>
+
+    <!----------------------------- Header ----------------------------->
+    <header class="container sect-cont-wrap">
+        <div class="hdr inner-cont">
+            <a href="#">
+                <img src="./assets/img/logo.png" alt="logo" class="logo" />
+            </a>
+            <ul class="hdr-list">
+                <li class="hdr-btn-wrapper">
+                    <button class="btn-secondary">upgrade your plan</button>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="icon-notification">
+                            <span class="mark-top">3</span>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/profile.png" alt="profile" class="profile" />
+                    </a>
+                </li>
+            </ul>
+            <button class="nav-btn btn-clear" onclick="onNavBtn()">
+                <i class="icon-nav"></i>
+            </button>
+        </div>
+    </header>
+    <!----------------------------- Main ----------------------------->
+    <main class="main">
+        <!----------------------------- Aside-Nav ----------------------------->
+        <aside id="aside" class="sect-cont">
+            <span class="moving-bat left">
+                <img src="./assets/img/bat.png" alt="moving-bat" />
+            </span>
+            <span class="moving-bat right">
+                <img src="./assets/img/bat.png" alt="moving-bat" />
+            </span>
+            <span class="moving-bat central">
+                <img src="./assets/img/bat.png" alt="moving-bat" />
+            </span>
+            <nav>
+                <ul class="nav-list">
+                    <li>
+                        <a href="./dashboard.html" class="alg-center">
+                            <i class="icon-dashboard"></i>
+                            <span>dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./archive.html" class="alg-center">
+                            <i class="icon-archive"></i>
+                            <span>archive</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./statistics.html" class="alg-center">
+                            <i class="icon-statistics"></i>
+                            <span>statistics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./settings.html" class="alg-center active">
+                            <i class="icon-settings"></i>
+                            <span>settings</span>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="onNavBtn()" class="nav-close-btn btn-clear">
+                    <i class="icon-close"></i>
+                </button>
+            </nav>
+        </aside>
+        <!----------------------------- Settings ----------------------------->
+        <section class="settings sect-cont inner-cont">
+            <h2 class="head-secondary">Primary account settings</h2>
+            <form class="cols-sm-2 cols-mb setg-form">
+                <div class="col-sm-8 cols-mb">
+                    <div class="cols direct-col">
+                        <label class="setg-label required">change name</label>
+                        <input type="text" class="field-primary" required />
+                    </div>
+                    <div class="cols direct-col">
+                        <label class="setg-label required">change username</label>
+                        <input type="text" class="field-primary" required />
+                    </div>
+                    <div class="cols direct-col">
+                        <label class="setg-label">change status</label>
+                        <textarea class="field-primary" rows="10" cols="45"></textarea>
+                    </div>
+                    <div class="cols direct-col">
+                        <label class="setg-label">change gender</label>
+                        <div>
+                            <label class="setg-label">male</label>
+                            <input type="radio" name="gender" value="male" checked />
+                        </div>
+                        <div>
+                            <label class="setg-label">female</label>
+                            <input type="radio" name="gender" value="female" />
+                        </div>
+                    </div>
+                </div>                      
+                </div>
+                <div class="col-sm-4 cols-mb">
+                    <div class="cols direct-col">
+                        <label class="setg-label">change project badjet</label>
+                        <select class="field-primary">
+                            <option>option-1</option>
+                            <option>option-2</option>
+                        </select>
+                    </div>
+                    <div class="cols direct-col">
+                        <label class="setg-label">when would you like to start</label>
+                        <select class="field-primary">
+                            <option>option-1</option>
+                            <option>option-2</option>
+                        </select>
+                    </div>
+                    <div class="cols direct-col">
+                        <label class="setg-label required">are you human? 21 + 11 = ?</label>
+                        <input type="text" class="field-primary" required />
+                    </div>
+                </div>
+                <div class="col-sm-8 direct-col"cols-mb">
+                    <button class="btn-primary">submit</button>    
+                </div>
+            </form>
+        </section>
+    </main>
+    <!----------------------------- Footer ----------------------------->
+    <footer class="container sect-cont-wrap">
+        <div class="ftr-content-wrap alg-center">
+            <img src="./assets/img/bat.png" alt="bat" class="ftr-img"/>
+            <span>© 2020 kodeist, all rights reserved</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

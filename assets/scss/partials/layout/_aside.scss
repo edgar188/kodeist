@@ -59,12 +59,7 @@ aside {
         @include position(0, null, null, 50%);
         animation-name: bat-central-move;
     }
-
-    &:hover {
-        animation-play-state: paused;
-    }
 }
-
 
 .mov-bat-cont {
     @include position();

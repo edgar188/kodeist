@@ -1,9 +1,3 @@
-// item align to center
-.centered-axis-xy {
-    @include position(50%, null, null, 50%);
-    transform: translate(-50%, -50%);
-}
-
 // Main container
 .container {
     width: 100%;
@@ -32,9 +26,26 @@
     padding-right: 105px;
 }
 
+.head-secondary {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: $font-secondary;
+}
+
+// item align to center
+.centered-axis-xy {
+    @include position(50%, null, null, 50%);
+    transform: translate(-50%, -50%);
+}
+
 // Elements align to center with flexbox
 .alg-center {
     @include dsp-flex(null, null, center);
+}
+
+// Flex direction column
+.direct-col {
+    @include dsp-flex(wrap, null, null, column);
 }
 
 // Rounded mark for icons...
@@ -58,13 +69,13 @@
     }
 }
 
-.danger {
-    color: $color-light;
-    background-color: $color-bg-danger;
-    &:hover {
-        opacity: $opacity-default;
-      }
-}
+// .danger {
+//     color: $color-light;
+//     background-color: $color-bg-danger;
+//     &:hover {
+//         opacity: $opacity-default;
+//      }
+// }
 
 // Floats
 @each $key,$val in $resolutions {
