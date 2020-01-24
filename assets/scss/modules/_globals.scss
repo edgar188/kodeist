@@ -44,8 +44,16 @@
 }
 
 // Flex direction column
-.direct-col {
+.flx-dir-col {
     @include dsp-flex(wrap, null, null, column);
+    background: red;
+    width: 100%;
+    height: 9999px;
+}
+
+// Flex-wrap
+.flx-wrap {
+    @include dsp-flex(wrap);
 }
 
 // Rounded mark for icons...

@@ -47,6 +47,6 @@
 // cols margins
 .cols-mb {
   &> [class^="col"], &> [class*=" col"] {
-    margin-bottom: $grid-spacing-md;
+    margin-bottom: $grid-spacing;
   }
 }
