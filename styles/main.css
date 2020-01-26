@@ -115,14 +115,6 @@
     transform: rotate(-360deg);
   }
 }
-@keyframes cards-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes hdr-notification {
   0% {
     transform: rotate(5deg);
@@ -514,7 +506,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 24px;
-  animation: cards-opacity 3s ease-out;
 }
 
 .db-card {

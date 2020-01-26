@@ -1,7 +1,6 @@
 .db-cards {
     @include dsp-flex(wrap, space-between);
     margin-top: 24px;
-    animation: cards-opacity $anim-duration-sm ease-out; 
 }
 
 .db-card {

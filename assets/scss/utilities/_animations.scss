@@ -45,16 +45,6 @@
 }
 
 
-// Dashboard cards opacity animation
-@keyframes cards-opacity {
-    from {
-        opacity: $opacity-none;
-    }
-    to {
-        opacity: $opacity-default
-    }
-}
-
 // Header notification icon animation
 @keyframes hdr-notification {
     0% {transform: rotate(5deg);}
