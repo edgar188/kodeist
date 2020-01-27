@@ -748,6 +748,28 @@ footer {
   background: #fff;
 }
 
+.table {
+  margin-top: 24px;
+  width: 100%;
+  text-align: left;
+}
+.table tr > th,
+.table tr > td {
+  width: 20%;
+  padding: 20px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+}
+.table tr > th > span,
+.table tr > td > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+}
+
 @media (min-width: 1440px) {
   .cols-xl-12 {
     flex-wrap: wrap;
