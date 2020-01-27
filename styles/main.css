@@ -259,6 +259,10 @@ a:hover {
   content: "";
 }
 
+.icon-users:before {
+  content: "";
+}
+
 header {
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -655,7 +659,7 @@ footer {
 }
 .form-group > label {
   position: absolute;
-  top: 0;
+  top: 0px;
   display: block;
   padding-left: 10px;
   font-size: 1em;
@@ -2857,22 +2861,31 @@ input.w-100, textarea.w-100, select.w-100 {
 .valid-msg-success {
   font-size: 0.875em;
   font-family: "Worksans-medium", serif;
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: green;
+}
+.valid-msg-success::first-letter {
+  text-transform: uppercase;
 }
 
 .valid-msg-warning {
   font-size: 0.875em;
   font-family: "Worksans-medium", serif;
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: goldenrod;
+}
+.valid-msg-warning::first-letter {
+  text-transform: uppercase;
 }
 
 .valid-msg-error {
   font-size: 0.875em;
   font-family: "Worksans-medium", serif;
-  text-transform: capitalize;
+  text-transform: lowercase;
   color: red;
+}
+.valid-msg-error::first-letter {
+  text-transform: uppercase;
 }
 
 .active {

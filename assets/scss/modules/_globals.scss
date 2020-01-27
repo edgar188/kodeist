@@ -58,8 +58,11 @@
     .valid-msg-#{$key} {
         font-size: 0.875em;
         font-family: $font-primary;
-        text-transform: capitalize;
+        text-transform: lowercase;
         color: $val;
+        &::first-letter {
+            text-transform: uppercase;
+        }
     }
 }
 
