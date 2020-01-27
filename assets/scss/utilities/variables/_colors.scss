@@ -29,6 +29,12 @@ $btn-animation-colors: (
     tertiary: crimson,
 );
 
+$valid-msg-colors: (
+    success: green,
+    warning: goldenrod,
+    error: red
+);
+
 // Border Colors ---------------------------
 $color-br-primary: #202426;
 $color-br-secondary: #169291;

@@ -103,14 +103,17 @@
                     <div class="cols form-group">
                         <input name="email" type="email" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
                         <label for="email">email</label>
+                        <p class="valid-msg-error">the email address you entered does not match with the required format. Please enter your email address using standard found!</p>
                     </div>
                     <div class="cols form-group">
                         <input name="currentPassword" type="password" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
                         <label for="currentPassword">current password</label>
+                        <p class="valid-msg-warning">password is secure!</p>
                     </div>
                     <div class="cols form-group">
                         <input name="newPassword" type="password" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
                         <label for="newPassword">new password</label>
+                        <p class="valid-msg-success">password is not secure!</p>
                     </div>
                 </div>
                 </div>

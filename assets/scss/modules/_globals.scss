@@ -53,6 +53,25 @@
     @include dsp-flex(wrap);
 }
 
+// Validation messages (success, warning, error)
+@each $key, $val in $valid-msg-colors {
+    .valid-msg-#{$key} {
+        font-size: 0.875em;
+        font-family: $font-primary;
+        text-transform: capitalize;
+        text-indent: 10px;
+        color: $val;
+    }
+}
+
+.active {
+    color: $color-text-primary;
+    cursor: default;
+    &:hover {
+      opacity: $opacity-default;
+    }
+}
+
 // Rounded mark for icons...
 .mark-top {
     @include position(null, null, 10px, 15px);
@@ -64,14 +83,6 @@
     border-radius: $br-rounded;
     color: $color-light;
     background-color: $color-bg-secondary;
-}
-
-.active {
-    color: $color-text-primary;
-    cursor: default;
-    &:hover {
-      opacity: $opacity-default;
-    }
 }
 
 // Floats

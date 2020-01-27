@@ -678,6 +678,9 @@ footer {
   padding-left: 0;
   color: #0796DD;
 }
+.form-group > p {
+  margin-top: 10px;
+}
 
 .radio-container {
   padding-left: 15px;
@@ -2846,6 +2849,38 @@ input.w-100, textarea.w-100, select.w-100 {
   flex-wrap: wrap;
 }
 
+.valid-msg-success {
+  font-size: 0.875em;
+  font-family: "Worksans-medium", serif;
+  text-transform: capitalize;
+  text-indent: 10px;
+  color: green;
+}
+
+.valid-msg-warning {
+  font-size: 0.875em;
+  font-family: "Worksans-medium", serif;
+  text-transform: capitalize;
+  text-indent: 10px;
+  color: goldenrod;
+}
+
+.valid-msg-error {
+  font-size: 0.875em;
+  font-family: "Worksans-medium", serif;
+  text-transform: capitalize;
+  text-indent: 10px;
+  color: red;
+}
+
+.active {
+  color: #1E272E;
+  cursor: default;
+}
+.active:hover {
+  opacity: 1;
+}
+
 .mark-top {
   position: absolute;
   bottom: 10px;
@@ -2858,14 +2893,6 @@ input.w-100, textarea.w-100, select.w-100 {
   border-radius: 50%;
   color: #fff;
   background-color: #E64A19;
-}
-
-.active {
-  color: #1E272E;
-  cursor: default;
-}
-.active:hover {
-  opacity: 1;
 }
 
 @media (min-width: 1440px) {

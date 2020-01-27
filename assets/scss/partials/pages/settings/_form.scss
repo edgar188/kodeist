@@ -36,6 +36,10 @@
             color: $color-text-custom;
         }
     }
+
+    & > p {
+        margin-top: 10px;
+    }
 }
 
 .radio-container {
