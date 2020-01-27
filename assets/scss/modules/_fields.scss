@@ -1,5 +1,6 @@
 input, textarea, select {
     &.w-100 {
+        max-width: unset;
         width: 100%;
     }
 }

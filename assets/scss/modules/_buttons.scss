@@ -1,7 +1,12 @@
 button {
+    transition: $trns-duration-xs;
     &:hover {
         cursor: pointer;
         opacity: $opacity-primary;
+    }
+    &.w-100 {
+        max-width: unset;
+        width: 100%;
     }
 }
 
@@ -16,10 +21,6 @@ button {
     background-color: map-get($btn-colors, primary);
     border: $br-none;
     border-radius: $br-default;
-    &.w-100 {
-        max-width: unset;
-        width: 100%;
-    }
 }
 
 .btn-secondary {

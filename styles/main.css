@@ -680,6 +680,7 @@ footer {
 }
 .form-group > p {
   margin-top: 10px;
+  text-indent: 10px;
 }
 
 .radio-container {
@@ -2160,9 +2161,16 @@ footer {
   }
 }
 
+button {
+  transition: 0.1s;
+}
 button:hover {
   cursor: pointer;
   opacity: 0.7;
+}
+button.w-100 {
+  max-width: unset;
+  width: 100%;
 }
 
 .btn-primary {
@@ -2178,10 +2186,6 @@ button:hover {
   background-color: #0796DD;
   border: 0;
   border-radius: 4px;
-}
-.btn-primary.w-100 {
-  max-width: unset;
-  width: 100%;
 }
 
 .btn-secondary {
@@ -2250,6 +2254,7 @@ button:hover {
 }
 
 input.w-100, textarea.w-100, select.w-100 {
+  max-width: unset;
   width: 100%;
 }
 
@@ -2853,7 +2858,6 @@ input.w-100, textarea.w-100, select.w-100 {
   font-size: 0.875em;
   font-family: "Worksans-medium", serif;
   text-transform: capitalize;
-  text-indent: 10px;
   color: green;
 }
 
@@ -2861,7 +2865,6 @@ input.w-100, textarea.w-100, select.w-100 {
   font-size: 0.875em;
   font-family: "Worksans-medium", serif;
   text-transform: capitalize;
-  text-indent: 10px;
   color: goldenrod;
 }
 
@@ -2869,7 +2872,6 @@ input.w-100, textarea.w-100, select.w-100 {
   font-size: 0.875em;
   font-family: "Worksans-medium", serif;
   text-transform: capitalize;
-  text-indent: 10px;
   color: red;
 }
 

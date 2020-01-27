@@ -6,7 +6,6 @@ function onNavBtn() {
         : asideNode.className = "sect-cont open";
 }
 
-
 function onChangeVal(node) {
     var label = node.nextElementSibling;
     
