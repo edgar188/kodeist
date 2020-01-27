@@ -43,6 +43,7 @@
     </header>
     <!----------------------------- Main ----------------------------->
     <main class="main">
+        
         <!----------------------------- Aside-Nav ----------------------------->
         <aside id="aside" class="sect-cont">
             <span class="moving-bat left">
@@ -88,27 +89,27 @@
         </aside>
         <!----------------------------- Settings ----------------------------->
         <section class="settings sect-cont inner-cont">
-            <h2 class="head-secondary">Primary account settings</h2>
-            <form class="cols-sm-2 cols-mb setg-form text-capitalize ">
+            <h2 class="head-secondary">primary account settings</h2>
+            <form class="cols-sm-2 cols-mb setg-form text-capitalize">
                 <div class="col-sm-8 cols-mb">
                     <div class="cols form-group">
-                        <input name="firstName" class="field-primary w-100" required />
-                        <label for="firstName">first name</label>
+                        <input name="firstName" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
+                        <label for="firstName" class="">first name</label>
                     </div>
                     <div class="cols form-group">
-                        <input name="lastName" class="field-primary w-100" required />
+                        <input name="lastName" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
                         <label for="lastName">last Name</label>
                     </div>
                     <div class="cols form-group">
-                        <input name="email" type="email" class="field-primary w-100" required />
+                        <input name="email" type="email" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
                         <label for="email">email</label>
                     </div>
                     <div class="cols form-group">
-                        <input name="currentPassword" type="password" class="field-primary w-100" required />
+                        <input name="currentPassword" type="password" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
                         <label for="currentPassword">current password</label>
                     </div>
                     <div class="cols form-group">
-                        <input name="newPassword" type="password" class="field-primary w-100" required />
+                        <input name="newPassword" type="password" class="field-primary w-100" onchange="onChangeVal(this)" value="" required />
                         <label for="newPassword">new password</label>
                     </div>
                 </div>

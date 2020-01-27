@@ -6,8 +6,8 @@
 }
 
 @media (max-width: map-get($resolutions, lg)) {
-      // ----------------------- Buttons -----------------------
-      .btn-primary {
+    // ----------------------- Buttons -----------------------
+    .btn-primary {
         padding: round(12px * map-get($mlp-values, lg)) round(25px * map-get($mlp-values, lg));
     }
 

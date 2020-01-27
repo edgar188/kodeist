@@ -1,0 +1,65 @@
+@media (max-width: map-get($resolutions, lg)) {
+    .settings {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: map-get($resolutions, md)) {
+    .settings {
+        font-size: 15px;
+    }
+
+    .setg-form {
+        & > div:last-child {
+            margin-top: -30px;
+        }
+    }
+}
+
+@media (max-width: map-get($resolutions, sm)) {
+    .setg-form {
+        .field-primary {
+            font-size: 0.9em;
+        }
+
+        & > div:last-child {
+            margin-top: -25px;
+        }
+    }
+}
+
+@media (max-width: map-get($resolutions, xs)) {
+    .settings {
+        font-size: 14px;
+    }
+
+    .setg-form {
+        margin-top: 30px;
+        & > div:last-child {
+            margin-top: -10px;
+        }
+        .btn-primary {
+            padding: 6px 8px;
+        }
+    }
+
+    .form-group > input:focus + label,
+    .form-group > input + .label-active {
+        top: -25px;
+        font-size: 0.8em;
+    }
+
+    .radio-wrap {
+        padding-left: 25px;
+    }
+
+    .checkmark {
+        width: 16px;
+        height: 16px;
+        &::after {
+            width: 4px;
+            height: 4px;
+        }
+    }
+
+}

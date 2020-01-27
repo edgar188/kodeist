@@ -69,7 +69,8 @@
     }
 
     .logo {
-        max-width: 120px;
+        max-width: 110px;
+        max-height: 20px;
     }
 
     .nav-btn {
@@ -79,9 +80,11 @@
 
 @media (max-width:  map-get($resolutions, xs)) {
     .logo {
-        max-width: 110px;
-        
-        max-height: 20px;
+        max-width: 100px;
+    }
+
+    .nav-btn {
+        font-size: 1.375em;
     }
 }
 
@@ -95,10 +98,6 @@
 
     .logo {
         max-width: 95px;
-    }
-
-    .nav-btn {
-        font-size: 1.4em;
     }
 
     .db-rev-list {

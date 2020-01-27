@@ -1,52 +1,87 @@
 // cols equal
-@each $key,$val in $resolutions {
+@each $key, $val in $resolutions {
   @media (min-width: $val) {
-    $grid-cols: $grid-cols-count;
-    @while $grid-cols > 1 {
-      .cols-#{$key}-#{$grid-cols} {
+    @for $i from $grid-cols-count to 1 {
+      .cols-#{$key}-#{$i} {
         flex-wrap: wrap;
         display: flex;
-
-        &> [class^="col"]:not(.ml-0), &> [class*=" col"]:not(.ml-0) {
+    
+        & > [class^="col"]:not(.ml-0), & > [class*=" col"]:not(.ml-0) {
           margin-left: $grid-spacing;
         }
-        &> [class^="col"], &> [class*=" col"] {
-          $col-width: (100% / $grid-cols);
-          $col-px-spacing: (($grid-cols - 1) * $grid-spacing / $grid-cols);
+        & > [class^="col"], & > [class*=" col"] {
+          $col-width: (100% / $i);
+          $col-px-spacing: (($i - 1) * $grid-spacing / $i);
           width: calc(#{$col-width} - #{$col-px-spacing});
-
-          &:nth-child(#{$grid-cols}n + 1) {
+    
+          &:nth-child(#{$i + n} + 1) {
             margin-left: 0;
           }
         }
       }
+    }
+  }
+}
 
-      $grid-cols: $grid-cols - 1;
+//cols equal without media
+@for $i from $grid-cols-count to 1 {
+  .cols-#{$i} {
+    flex-wrap: wrap;
+    display: flex;
+
+    & > [class^="col"]:not(.ml-0), & > [class*=" col"]:not(.ml-0) {
+      margin-left: $grid-spacing;
+    }
+    & > [class^="col"], & > [class*=" col"] {
+      $col-width: (100% / $i);
+      $col-px-spacing: (($i - 1) * $grid-spacing / $i);
+      width: calc(#{$col-width} - #{$col-px-spacing});
+
+      &:nth-child(#{$i + n} + 1) {
+        margin-left: 0;
+      }
     }
   }
 }
 
 // cols different sizes
-@each $key,$val in $resolutions {
+@each $key, $val in $resolutions {
   @media (min-width: $val) {
-    $grid-cols: $grid-cols-count;
-    @while $grid-cols > 1 {
+    @for $i from $grid-cols-count to 1 {
       [class^="cols-"], [class*=" cols-"] {
-        .col-#{$key}-#{$grid-cols} {
-          $col-width: (100% / $grid-cols-count * $grid-cols);
-          $col-px-spacing:  $grid-spacing - ($grid-spacing / ($grid-cols-count / $grid-cols));
+        .col-#{$key}-#{$i} {
+          $col-width: (100% / $grid-cols-count * $i);
+          $col-px-spacing:  $grid-spacing - ($grid-spacing / ($grid-cols-count / $i));
           width: calc(#{$col-width} - #{$col-px-spacing});
         }
       }
+    }    
+  }
+}
 
-      $grid-cols: $grid-cols - 1;
+// cols different sizes without media
+@for $i from $grid-cols-count to 1 {
+  [class^="cols-"], [class*=" cols-"] {
+    .col-#{$i} {
+      $col-width: (100% / $grid-cols-count * $i);
+      $col-px-spacing:  $grid-spacing - ($grid-spacing / ($grid-cols-count / $i));
+      width: calc(#{$col-width} - #{$col-px-spacing});
     }
   }
 }
 
-// cols margins
+// cols margin bottom
 .cols-mb {
-  &> [class^="col"], &> [class*=" col"] {
+  & > [class^="col"], & > [class*=" col"] {
     margin-bottom: $grid-spacing;
+    @media (max-width: map-get($resolutions, md)) {
+      margin-bottom: $grid-spacing - 10;
+    }
+    @media (max-width: map-get($resolutions, sm)) {
+      margin-bottom: $grid-spacing - 15;
+    }
+    @media (max-width: map-get($resolutions, xs)) {
+      margin-bottom: $grid-spacing - 25;
+    }
   }
 }

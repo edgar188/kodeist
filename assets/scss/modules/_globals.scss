@@ -27,7 +27,7 @@
 }
 
 .head-secondary {
-    font-size: 1.5em;
+    font-size: 1.375em;
     text-transform: capitalize;
     font-family: $font-secondary;
 }
@@ -46,9 +46,6 @@
 // Flex direction column
 .flx-dir-col {
     @include dsp-flex(wrap, null, null, column);
-    background: red;
-    width: 100%;
-    height: 9999px;
 }
 
 // Flex-wrap
@@ -76,14 +73,6 @@
       opacity: $opacity-default;
     }
 }
-
-// .danger {
-//     color: $color-light;
-//     background-color: $color-bg-danger;
-//     &:hover {
-//         opacity: $opacity-default;
-//      }
-// }
 
 // Floats
 @each $key,$val in $resolutions {

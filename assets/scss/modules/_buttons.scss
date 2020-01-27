@@ -1,5 +1,4 @@
 button {
-    transition: $trns-duration-sm;
     &:hover {
         cursor: pointer;
         opacity: $opacity-primary;
@@ -17,8 +16,6 @@ button {
     background-color: map-get($btn-colors, primary);
     border: $br-none;
     border-radius: $br-default;
-    animation: null $anim-duration-md null null infinite alternate forwards;
-    animation-name: btn-primary-shadow;
     &.w-100 {
         max-width: unset;
         width: 100%;
