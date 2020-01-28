@@ -1,20 +1,16 @@
-.db-filter {
+.filter {
     @include dsp-flex(null, space-between, center);
     margin-top: 30px;
  }
  
-.db-filter-list {
+.filter-list {
     @include dsp-flex(null, space-between, center);
     & > li > button {
         margin-right: 16px;
     }
 }
-
-.tab-btn-symbol {
-    display: none;
-}
  
-.db-sort-btn {
+.sort-btn {
     text-transform: capitalize;
     font-size: 0.875em;
     font-family: $font-secondary;

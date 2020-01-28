@@ -426,37 +426,33 @@ footer {
   animation-play-state: paused;
 }
 
-.db-filter {
+.filter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
 }
 
-.db-filter-list {
+.filter-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.db-filter-list > li > button {
+.filter-list > li > button {
   margin-right: 16px;
 }
 
-.tab-btn-symbol {
-  display: none;
-}
-
-.db-sort-btn {
+.sort-btn {
   text-transform: capitalize;
   font-size: 0.875em;
   font-family: "Worksans-semibold", serif;
   color: #1E272E;
 }
-.db-sort-btn > span {
+.sort-btn > span {
   padding-right: 20px;
   color: rgba(30, 39, 46, 0.5);
 }
-.db-sort-btn > i {
+.sort-btn > i {
   font-size: 1.125em;
   color: #000;
 }
@@ -1889,6 +1885,9 @@ button.w-100 {
   max-width: unset;
   width: 100%;
 }
+button.mw-60 {
+  min-width: 60px;
+}
 
 .btn-primary {
   white-space: nowrap;
@@ -2727,6 +2726,10 @@ input.w-100, textarea.w-100, select.w-100 {
   display: none;
 }
 
+.tab-btn-symbol {
+  display: none;
+}
+
 .db-cards {
   display: flex;
   flex-wrap: wrap;
@@ -2970,26 +2973,38 @@ input.w-100, textarea.w-100, select.w-100 {
   background: #fff;
 }
 
-.table {
+.table-wrap {
   margin-top: 24px;
+}
+
+.table {
   width: 100%;
   text-align: left;
+  font-size: 1em;
+  box-shadow: 0px 0px 10px #aaaaaa;
+  transition: box-shadow 0.3s;
 }
-.table tr > th,
-.table tr > td {
+.table tr > th, .table tr > td {
+  border-bottom: 1px solid rgba(32, 36, 38, 0.5);
+  border-right: 1px solid rgba(32, 36, 38, 0.5);
   width: 20%;
-  padding: 20px 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: inline-block;
+  padding: 15px 10px;
+  word-break: break-all;
 }
-.table tr > th > span,
-.table tr > td > span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  max-width: 100%;
+.table tr > th:first-of-type, .table tr > td:first-of-type {
+  border-left: 1px solid rgba(32, 36, 38, 0.5);
+}
+.table tr > th {
+  font-family: "Worksans-semibold", serif;
+  color: #fff;
+  background-color: #169CDF;
+  border-top: 1px solid rgba(32, 36, 38, 0.5);
+}
+.table tr:nth-child(even) {
+  background-color: #fff;
+}
+.table:hover {
+  box-shadow: 5px 10px 10px #aaaaaa;
 }
 
 @media (max-width: 1440px) {
@@ -3091,6 +3106,259 @@ input.w-100, textarea.w-100, select.w-100 {
   .inner-cont {
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+@media (max-width: 1440px) {
+  .card-list, .card-diff {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-list > li {
+    padding-bottom: 24px;
+  }
+}
+@media (max-width: 1280px) {
+  .db-rev-list > li {
+    padding-right: 20px;
+  }
+  .db-rev-list > li > a.active::before {
+    padding-right: 20px;
+    width: 36px;
+  }
+
+  .db-card {
+    width: 31%;
+  }
+
+  .card-list {
+    margin-top: 28px;
+  }
+
+  .card-issue-link {
+    right: 30px;
+    bottom: 15px;
+  }
+
+  .card-issue-count {
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+  }
+
+  .card-issue-text {
+    padding-top: 5px;
+  }
+
+  .card-list {
+    margin-top: 24px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .card-list > li {
+    padding-bottom: 22px;
+  }
+
+  .card-diff {
+    padding-top: 18px;
+    padding-right: 15px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+  }
+  .card-diff > div {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .db-rev-list > li {
+    padding-right: 8px;
+  }
+  .db-rev-list > li > a::before {
+    padding-right: 8px;
+    width: 36px;
+  }
+  .db-rev-list > li > a.active::before {
+    top: -5px;
+    height: 2px;
+  }
+
+  .db-card {
+    width: 47%;
+    margin-bottom: 6%;
+  }
+
+  .card-list {
+    margin-top: 24px;
+    padding-right: 15px;
+    padding-left: 25px;
+  }
+  .card-list > li {
+    padding-bottom: 16px;
+  }
+
+  .card-diff {
+    padding-top: 16px;
+    padding-right: 15px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .tab-btn {
+    display: none;
+  }
+
+  .tab-btn-hidden {
+    display: block;
+  }
+
+  .card-list {
+    margin-top: 24px;
+    padding-right: 10px;
+    padding-left: 20px;
+  }
+
+  .card-issue-link {
+    bottom: 10px;
+  }
+
+  .card-issue-count {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    line-height: 30px;
+  }
+
+  .card-diff {
+    padding-right: 15px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .db-tab {
+    align-items: flex-end;
+  }
+
+  .db-rev-list {
+    white-space: nowrap;
+    font-size: 1em;
+  }
+  .db-rev-list > li {
+    padding-right: 5px;
+  }
+  .db-rev-list > li > a::before {
+    padding-right: 5px;
+  }
+
+  .db-card {
+    width: 100%;
+  }
+
+  .card-list {
+    margin-top: 20px;
+  }
+  .card-list > li {
+    padding-bottom: 10px;
+  }
+
+  .card-issue-link {
+    right: 30px;
+  }
+
+  .card-diff {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .btn-del {
+    top: -5px;
+  }
+}
+@media (max-width: 1280px) {
+  .settings {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .settings {
+    font-size: 15px;
+  }
+
+  .setg-form > div:last-child {
+    margin-top: -30px;
+  }
+}
+@media (max-width: 768px) {
+  .setg-form .field-primary {
+    font-size: 0.9em;
+  }
+  .setg-form > div:last-child {
+    margin-top: -25px;
+  }
+}
+@media (max-width: 480px) {
+  .settings {
+    font-size: 14px;
+  }
+
+  .setg-form {
+    margin-top: 30px;
+  }
+  .setg-form > div:last-child {
+    margin-top: -10px;
+  }
+  .setg-form .btn-primary {
+    padding: 6px 8px;
+  }
+
+  .form-group > input:focus + label,
+.form-group > input + .label-active {
+    top: -25px;
+    font-size: 0.8em;
+  }
+
+  .radio-wrap {
+    padding-left: 25px;
+  }
+
+  .checkmark {
+    width: 16px;
+    height: 16px;
+  }
+  .checkmark::after {
+    width: 4px;
+    height: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .table tr {
+    border-top: 1px dotted rgba(32, 36, 38, 0.5);
+    border-right: 1px dotted rgba(32, 36, 38, 0.5);
+    border-left: 1px dotted rgba(32, 36, 38, 0.5);
+  }
+  .table tr > td {
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .table tr > td:first-of-type {
+    border-left: 0;
+  }
+  .table tr > td > span {
+    padding-left: 10px;
+  }
+  .table tr > td::before {
+    content: attr(user-data);
+    display: inline-block;
+    font-family: "Worksans-semibold", serif;
+  }
+  .table tr:first-of-type {
+    display: none;
+  }
+  .table tr:last-of-type {
+    border-bottom: 1px dotted rgba(32, 36, 38, 0.5);
   }
 }
 @media (max-width: 1440px) {
@@ -3279,263 +3547,36 @@ input.w-100, textarea.w-100, select.w-100 {
     max-height: 20px;
   }
 }
-@media (max-width: 1440px) {
-  .card-list, .card-diff {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .card-list > li {
-    padding-bottom: 24px;
-  }
-}
-@media (max-width: 1280px) {
-  .db-rev-list > li {
-    padding-right: 20px;
-  }
-  .db-rev-list > li > a.active::before {
-    padding-right: 20px;
-    width: 36px;
-  }
-
-  .db-card {
-    width: 31%;
-  }
-
-  .card-list {
-    margin-top: 28px;
-  }
-
-  .card-issue-link {
-    right: 30px;
-    bottom: 15px;
-  }
-
-  .card-issue-count {
-    width: 40px;
-    height: 40px;
-    line-height: 30px;
-  }
-
-  .card-issue-text {
-    padding-top: 5px;
-  }
-
-  .card-list {
-    margin-top: 24px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .card-list > li {
-    padding-bottom: 22px;
-  }
-
-  .card-diff {
-    padding-top: 18px;
-    padding-right: 15px;
-    padding-bottom: 18px;
-    padding-left: 15px;
-  }
-  .card-diff > div {
-    margin-right: 10px;
-  }
-}
 @media (max-width: 1024px) {
-  .db-rev-list > li {
-    padding-right: 8px;
-  }
-  .db-rev-list > li > a::before {
-    padding-right: 8px;
-    width: 36px;
-  }
-  .db-rev-list > li > a.active::before {
-    top: -5px;
-    height: 2px;
-  }
-
-  .db-filter {
+  .filter {
     align-items: flex-end;
-  }
-
-  .db-sort-btn > span > span {
-    padding-right: 10px;
-  }
-  .db-sort-btn > span > i {
-    font-size: 1em;
-  }
-
-  .db-card {
-    width: 47%;
-    margin-bottom: 6%;
-  }
-
-  .card-list {
-    margin-top: 24px;
-    padding-right: 15px;
-    padding-left: 25px;
-  }
-  .card-list > li {
-    padding-bottom: 16px;
-  }
-
-  .card-diff {
-    padding-top: 16px;
-    padding-right: 15px;
-    padding-bottom: 16px;
-    padding-left: 25px;
   }
 }
 @media (max-width: 768px) {
-  .tab-btn {
-    display: none;
-  }
-
-  .tab-btn-hidden {
-    display: block;
-  }
-
-  .db-filter-list > li > button {
+  .filter-list > li > button {
     margin-right: 8px;
   }
 
-  .db-sort-btn > span {
+  .sort-btn > span {
     padding-right: 5px;
   }
-  .db-sort-btn > i {
+  .sort-btn > i {
     font-size: 1em;
-  }
-
-  .card-list {
-    margin-top: 24px;
-    padding-right: 10px;
-    padding-left: 20px;
-  }
-
-  .card-issue-link {
-    bottom: 10px;
-  }
-
-  .card-issue-count {
-    width: 32px;
-    height: 32px;
-    padding: 2px;
-    line-height: 30px;
-  }
-
-  .card-diff {
-    padding-right: 15px;
-    padding-left: 20px;
   }
 }
 @media (max-width: 480px) {
-  .db-tab {
-    align-items: flex-end;
-  }
-
-  .db-rev-list {
-    white-space: nowrap;
-    font-size: 1em;
-  }
-  .db-rev-list > li {
-    padding-right: 5px;
-  }
-  .db-rev-list > li > a::before {
-    padding-right: 5px;
-  }
-
-  .db-filter {
+  .filter {
     align-items: flex-end;
     margin-top: 10px;
   }
 
-  .db-filter-list {
+  .filter-list {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  .db-filter-list > li > button {
+  .filter-list > li > button {
     margin-right: 10px;
     margin-top: 10px;
-  }
-
-  .db-card {
-    width: 100%;
-  }
-
-  .card-list {
-    margin-top: 20px;
-  }
-  .card-list > li {
-    padding-bottom: 10px;
-  }
-
-  .card-issue-link {
-    right: 30px;
-  }
-
-  .card-diff {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .btn-del {
-    top: -5px;
-  }
-}
-@media (max-width: 1280px) {
-  .settings {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1024px) {
-  .settings {
-    font-size: 15px;
-  }
-
-  .setg-form > div:last-child {
-    margin-top: -30px;
-  }
-}
-@media (max-width: 768px) {
-  .setg-form .field-primary {
-    font-size: 0.9em;
-  }
-  .setg-form > div:last-child {
-    margin-top: -25px;
-  }
-}
-@media (max-width: 480px) {
-  .settings {
-    font-size: 14px;
-  }
-
-  .setg-form {
-    margin-top: 30px;
-  }
-  .setg-form > div:last-child {
-    margin-top: -10px;
-  }
-  .setg-form .btn-primary {
-    padding: 6px 8px;
-  }
-
-  .form-group > input:focus + label,
-.form-group > input + .label-active {
-    top: -25px;
-    font-size: 0.8em;
-  }
-
-  .radio-wrap {
-    padding-left: 25px;
-  }
-
-  .checkmark {
-    width: 16px;
-    height: 16px;
-  }
-  .checkmark::after {
-    width: 4px;
-    height: 4px;
   }
 }
 @media (max-width: 1280px) {

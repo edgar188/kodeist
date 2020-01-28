@@ -8,6 +8,9 @@ button {
         max-width: unset;
         width: 100%;
     }
+    &.mw-60 {
+        min-width: 60px;
+    }
 }
 
 .btn-primary {

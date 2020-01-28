@@ -94,47 +94,127 @@
         </aside>
         <!----------------------------- Users ----------------------------->
         <section class="users sect-cont inner-cont">
-            <h2 class="head-secondary">users table</h2>
-            <div class="db-filter">
-                <ul class="db-filter-list">
+            <h2 class="head-secondary">users list</h2>
+            <div class="filter">
+                <ul class="filter-list">
                     <li>
-                        <button class="btn-default btn-active">all</button>
+                        <button class="btn-default mw-60 btn-active">all</button>
                     </li>
                     <li>
-                        <button class="btn-default">admin</button>
+                        <button class="btn-default mw-60">admin</button>
                     </li>
                     <li>
-                        <button class="btn-default">superuser</button>
+                        <button class="btn-default mw-60">superuser</button>
                     </li>
                     <li>
-                        <button class="btn-default">financial</button>
+                        <button class="btn-default mw-60">financial</button>
                     </li>
                 </ul>
-                <button class="db-sort-btn btn-clear alg-center">
-                    <span>newest</span>
+                <button class="sort-btn btn-clear alg-center">
+                    <span>salary</span>
                     <i class="icon-arrow-top"></i>
                 </button>
             </div>
-            <table class="table text-capitalize">
-                <thead>
-                  <tr>
-                    <th><span>name</span></th>
-                    <th><span>surname</span></th>
-                    <th><span>country</span></th>
-                    <th><span>age</span></th>
-                    <th><span>salary, $</span></th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-column="Name"><span>daviv</span></td>
-                        <td data-column="Surname"><span>silva</span></td>
-                        <td data-column="Country"><span>spain</span></td>
-                        <td data-column="Age"><span>28</span></td>
-                        <td data-column="Salary, $"><span>1200</span></td>
+            <div class="table-wrap">
+                <table class="table text-capitalize">
+                    <thead>
+                      <tr>
+                        <th><span>name</span></th>
+                        <th><span>surname</span></th>
+                        <th><span>country</span></th>
+                        <th><span>age</span></th>
+                        <th><span>salary, $</span></th>
                       </tr>
-                </tbody>
-              </table>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td user-data="Name:"><span>daviv</span></td>
+                            <td user-data="Surname:"><span>silva</span></td>
+                            <td user-data="Country:"><span>spain</span></td>
+                            <td user-data="Age:"><span>28</span></td>
+                            <td user-data="Salary($):"><span>800</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>xavi</span></td>
+                            <td user-data="Surname:"><span>hernandez</span></td>
+                            <td user-data="Country:"><span>spain</span></td>
+                            <td user-data="Age:"><span>30</span></td>
+                            <td user-data="Salary($):"><span>900</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>granit</span></td>
+                            <td user-data="Surname:"><span>xhaka</span></td>
+                            <td user-data="Country:"><span>switzerland</span></td>
+                            <td user-data="Age:"><span>24</span></td>
+                            <td user-data="Salary($):"><span>1000</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>sergio</span></td>
+                            <td user-data="Surname:"><span>busquets</span></td>
+                            <td user-data="Country:"><span>spain</span></td>
+                            <td user-data="Age:"><span>28</span></td>
+                            <td user-data="Salary($):"><span>1500</span></td>
+                        </tr>  
+                        <tr>
+                            <td user-data="Name:"><span>ivan</span></td>
+                            <td user-data="Surname:"><span>rakitic</span></td>
+                            <td user-data="Country:"><span>croatia</span></td>
+                            <td user-data="Age:"><span>28</span></td>
+                            <td user-data="Salary($):"><span>1800</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>luca</span></td>
+                            <td user-data="Surname:"><span>modric</span></td>
+                            <td user-data="Country:"><span>croatia</span></td>
+                            <td user-data="Age:"><span>32</span></td>
+                            <td user-data="Salary($):"><span>2000</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>andrea</span></td>
+                            <td user-data="Surname:"><span>pirlo</span></td>
+                            <td user-data="Country:"><span>italy</span></td>
+                            <td user-data="Age:"><span>32</span></td>
+                            <td user-data="Salary($):"><span>2200</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>david</span></td>
+                            <td user-data="Surname:"><span>de gea</span></td>
+                            <td user-data="Country:"><span>spain</span></td>
+                            <td user-data="Age:"><span>32</span></td>
+                            <td user-data="Salary($):"><span>2500</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>mohamed</span></td>
+                            <td user-data="Surname:"><span>salah</span></td>
+                            <td user-data="Country:"><span>egypt</span></td>
+                            <td user-data="Age:"><span>25</span></td>
+                            <td user-data="Salary($):"><span>2800</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>luis</span></td>
+                            <td user-data="Surname:"><span>suarez</span></td>
+                            <td user-data="Country:"><span>uruguay</span></td>
+                            <td user-data="Age:"><span>32</span></td>
+                            <td user-data="Salary($):"><span>2900</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>andres</span></td>
+                            <td user-data="Surname:"><span>iniesta</span></td>
+                            <td user-data="Country:"><span>spain</span></td>
+                            <td user-data="Age:"><span>32</span></td>
+                            <td user-data="Salary($):"><span>3000</span></td>
+                        </tr>
+                        <tr>
+                            <td user-data="Name:"><span>lionel</span></td>
+                            <td user-data="Surname:"><span>messi</span></td>
+                            <td user-data="Country:"><span>argentina</span></td>
+                            <td user-data="Age:"><span>31</span></td>
+                            <td user-data="Salary($):"><span>4000</span></td>
+                        </tr>          
+                    </tbody>
+                </table>
+            </div>
+            
         </section>
     </main>
     <!----------------------------- Footer ----------------------------->

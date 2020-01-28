@@ -1,0 +1,32 @@
+@media (max-width: map-get($resolutions, sm)) {
+    .table {
+        tr {
+            border-top: 1px dotted rgba($color-br-primary, $opacity-secondary);
+            border-right: 1px dotted rgba($color-br-primary, $opacity-secondary);
+            border-left: 1px dotted rgba($color-br-primary, $opacity-secondary);
+            & > td {
+                border: $br-none;
+                display: block;
+                width: 100%;
+                padding: 10px;
+                &:first-of-type {
+                    border-left: $br-none;
+                }
+                & > span {
+                    padding-left: 10px;
+                }
+                &::before {
+                    content: attr(user-data);
+                    display: inline-block;
+                    font-family: $font-secondary;
+                }
+            }
+            &:first-of-type {
+                display: none;
+            }
+            &:last-of-type {
+                border-bottom: 1px dotted rgba($color-br-primary, $opacity-secondary);
+            }
+        }
+    }
+}
