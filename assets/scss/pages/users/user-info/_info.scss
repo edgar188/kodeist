@@ -61,85 +61,11 @@
 }
 
 .info-close {
-    @include position(40px, 20px);
+    @include position(30px, 30px);
     font-size: 1.5em;
     color: $color-text-secondary;
     &:hover {
         color: $color-text-primary;
-        transform: scale(1.2) rotate(90deg);
-    }
-}
-
-@media (max-width: map-get($resolutions, md)) {
-    .user-info-common {
-        width: 25%;
-    }
-
-    .user-info-bio {
-        width: calc-val(50, "-", 75);
-    }
-}
-
-@media (max-width: map-get($resolutions, sm)) {
-    .user-info-wrap {
-        flex-direction: column;
-    }
-
-    .user-info-common {
-        width: 100%;
-
-        .avatar {
-            max-width: 180px;
-            max-height: 180px;
-        }
-
-        & > ul {
-            display: inline-block;
-            margin-top: unset;
-            margin-left: 40px;
-            vertical-align: top;
-        }
-    }
-
-    .user-info-bio {
-        margin-left: unset;
-        width: 100%;
-        margin-top: 24px;
-    }
-}
-
-@media (max-width: map-get($resolutions, xs)) {
-    
-    .info-close {
-        top: 20px;
-        right: 10px;
-        font-size: 1.2em;
-    }
-
-    .user-info-common {
-        .avatar {
-            max-width: 125px;
-            max-height: 125px;
-        }
-
-        & > ul {
-            margin-left: 20px;
-            font-size: 1em;
-        }
-    }
-    .user-info-bio {
-        .bio-txt {
-            margin-top: 12px;
-            text-indent: 1em;
-        }
-    }
-}
-
-@media (max-width: map-get($resolutions, xxs)) {
-    .user-info-common {
-        .avatar {
-            max-width: 85px;
-            max-height: 85px;
-        }
+        transform: scale(1.2) rotate(-90deg);
     }
 }
