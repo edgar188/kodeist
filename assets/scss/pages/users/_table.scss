@@ -11,23 +11,22 @@
     tr {
         & > th,
         & > td {
-            border-bottom: 1px solid rgba($color-br-primary, $opacity-secondary);
-            border-right: 1px solid rgba($color-br-primary, $opacity-secondary);
+            border-bottom: 1px dashed rgba($color-br-primary, $opacity-secondary);
+            border-right: 1px dashed rgba($color-br-primary, $opacity-secondary);
             width: 20%;
             padding: 15px 10px;
             word-break: break-all;
             &:first-of-type {
-                border-left: 1px solid rgba($color-br-primary, $opacity-secondary);
+                border-left: 1px dashed rgba($color-br-primary, $opacity-secondary);
             }
         }
-
         & > th {
             font-family: $font-secondary;
             color: $color-light;
             background-color: $color-bg-line;
-            border-top: 1px solid rgba($color-br-primary, $opacity-secondary);
+            border-top: 1px dashed rgba($color-br-primary, $opacity-secondary);
+            cursor: default;
         }
-
         &:nth-child(even) {
             background-color: $color-light;
         }
@@ -35,7 +34,6 @@
             color: $color-light;
             background-color: rgba($color-text-primary, $opacity-primary);
             cursor: pointer;
-           
         }
     }
     &:hover {

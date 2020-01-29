@@ -8,6 +8,9 @@
     <title>Kodeist</title>
     <link rel="icon" href="./assets/img/bat.png">
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/libs/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/libs/magnific/jquery.magnific-popup.js"></script>
     <script async defer src="./assets/js/index.js"></script>
 </head>
 
@@ -127,7 +130,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="popup-user-info" href="#user-info">
                             <td user-data="Name:"><span>daviv</span></td>
                             <td user-data="Surname:"><span>silva</span></td>
                             <td user-data="Country:"><span>spain</span></td>
@@ -213,8 +216,57 @@
                         </tr>          
                     </tbody>
                 </table>
+                <section id="user-info" class="user-info container sect-cont-wrap mfp-hide">
+                    <div class="sect-cont inner-cont">
+                        <h2 class="head-secondary">user information</h2>
+                        <div class="user-info-wrap">
+                            <div class="user-info-common">
+                                <a href="#">
+                                    <img src="../../avatar.png" alt="avatar" class="avatar" />
+                                </a>
+                                <ul>
+                                    <li>
+                                        <span class="first-col">name</span>
+                                        <span class="sec-col">David</span>
+                                    </li>
+                                    <li>
+                                        <span class="first-col">surname</span>
+                                        <span class="sec-col">Silva</span>
+                                    </li>
+                                    <li>
+                                        <span class="first-col">email</span>
+                                        <span class="sec-col">example@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <span class="first-col">country</span>
+                                        <span class="sec-col">Spain</span>
+                                    </li>
+                                    <li>
+                                        <span class="first-col">gender</span>
+                                        <span class="sec-col">Male</span>
+                                    </li>
+                                    <li>
+                                        <span class="first-col">age</span>
+                                        <span class="sec-col">28</span>
+                                    </li>
+                                    <li>
+                                        <span class="first-col">salary($)</span>
+                                        <span class="sec-col">1500</span>
+                                    </li>
+                                    <li>
+                                        <span class="first-col">phone number</span>
+                                        <span class="sec-col">(+1) 111-111</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="user-info-bio">
+                                <h3 class="head-tertiary">user's biography</h3>
+                                <p class="bio-txt">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            
         </section>
     </main>
     <!----------------------------- Footer ----------------------------->

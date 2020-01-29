@@ -39,8 +39,7 @@ header {
 
 .logo {
     max-width: 160px;
-    animation: null $anim-duration-lg null null infinite null forwards;
-    animation-name: logo-rotate;
+    animation: logo-rotate $anim-duration-lg null null infinite null forwards;
 }
 
 .nav-btn {

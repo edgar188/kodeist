@@ -27,7 +27,13 @@
 }
 
 .head-secondary {
-    font-size: 1.375em;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: $font-secondary;
+}
+
+.head-tertiary {
+    font-size: 1.17em;
     text-transform: capitalize;
     font-family: $font-secondary;
 }

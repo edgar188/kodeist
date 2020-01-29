@@ -21,12 +21,12 @@
                     font-family: $font-secondary;
                 }
             }
-            &:first-of-type {
-                display: none;
-            }
             &:last-of-type {
                 border-bottom: 1px dotted rgba($color-br-primary, $opacity-secondary);
             }
+        }
+        & > thead > tr {
+            @include position(-9999px, -9999px);
         }
     }
 }

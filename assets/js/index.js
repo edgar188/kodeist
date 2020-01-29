@@ -6,6 +6,7 @@ function onNavBtn() {
         : asideNode.className = "sect-cont open";
 }
 
+// Settings form input field onchange handler
 function onChangeVal(node) {
     var label = node.nextElementSibling;
     
@@ -14,3 +15,15 @@ function onChangeVal(node) {
         : label.removeAttribute("class");
 }
 
+// Users section Magnific-popup handler
+$(document).ready(function () {
+    $('.popup-user-info').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        preloader: false,
+    });
+
+    $('#close').click(function() {
+        $.magnificPopup.close();
+    });
+});
