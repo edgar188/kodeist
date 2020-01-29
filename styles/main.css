@@ -3003,6 +3003,11 @@ input.w-100, textarea.w-100, select.w-100 {
 .table tr:nth-child(even) {
   background-color: #fff;
 }
+.table tr:hover {
+  color: #fff;
+  background-color: rgba(30, 39, 46, 0.7);
+  cursor: pointer;
+}
 .table:hover {
   box-shadow: 5px 10px 10px #aaaaaa;
 }

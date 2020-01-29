@@ -31,6 +31,12 @@
         &:nth-child(even) {
             background-color: $color-light;
         }
+        &:hover {
+            color: $color-light;
+            background-color: rgba($color-text-primary, $opacity-primary);
+            cursor: pointer;
+           
+        }
     }
     &:hover {
         box-shadow: $box-shadow-tertiary-hover;
