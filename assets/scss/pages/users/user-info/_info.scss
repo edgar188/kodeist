@@ -60,6 +60,16 @@
     }
 }
 
+.info-close {
+    @include position(40px, 20px);
+    font-size: 1.5em;
+    color: $color-text-secondary;
+    &:hover {
+        color: $color-text-primary;
+        transform: scale(1.2) rotate(90deg);
+    }
+}
+
 @media (max-width: map-get($resolutions, md)) {
     .user-info-common {
         width: 25%;
@@ -99,6 +109,13 @@
 }
 
 @media (max-width: map-get($resolutions, xs)) {
+    
+    .info-close {
+        top: 20px;
+        right: 10px;
+        font-size: 1.2em;
+    }
+
     .user-info-common {
         .avatar {
             max-width: 125px;

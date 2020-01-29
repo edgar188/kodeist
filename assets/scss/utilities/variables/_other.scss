@@ -38,7 +38,3 @@ $box-shadow-secondary: 5px 0px 5px rgba(0, 0, 0, $opacity-tertiary);
 $box-shadow-tertiary: 0px 0px 10px rgba(170, 170, 170);
 $box-shadow-tertiary-hover: 5px 10px 10px rgb(170, 170, 170);
 
-// Box Shadow animation
-$box-shdw-anim-primary: 5px 5px 5px map-get($btn-animation-colors, primary);
-$box-shdw-anim-secondary: 5px 5px 5px map-get($btn-animation-colors, secondary);
-$box-shdw-anim-tertiary: 5px 10px 10px map-get($btn-animation-colors, tertiary);
