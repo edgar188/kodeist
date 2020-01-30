@@ -8,6 +8,7 @@ aside {
     background-color: $color-light;
     transition: transform $trns-duration-md;
     & > nav {
+        position: relative;
         padding-left: 35px;
     }
 }

@@ -450,6 +450,7 @@ aside {
   transition: transform 0.5s;
 }
 aside > nav {
+  position: relative;
   padding-left: 35px;
 }
 
