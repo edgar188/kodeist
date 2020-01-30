@@ -15,17 +15,19 @@
 
     .user-info-common {
         width: 100%;
-
+        flex-direction: row;
         .avatar {
             max-width: 180px;
             max-height: 180px;
         }
 
+        & > a {
+            min-width: 40%;
+        }
+
         & > ul {
-            display: inline-block;
             margin-top: unset;
             margin-left: 40px;
-            vertical-align: top;
         }
     }
 
@@ -45,12 +47,12 @@
 
     .user-info-common {
         .avatar {
-            max-width: 125px;
-            max-height: 125px;
+            max-width: 120px;
+            max-height: 120px;
         }
 
         & > ul {
-            margin-left: 20px;
+            margin-left: 25px;
             font-size: 1em;
         }
     }
@@ -65,8 +67,12 @@
 @media (max-width: map-get($resolutions, xxs)) {
     .user-info-common {
         .avatar {
-            max-width: 85px;
-            max-height: 85px;
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        & > a {
+            min-width: 30%;
         }
     }
 }
