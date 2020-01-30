@@ -450,7 +450,6 @@ aside {
   transition: transform 0.5s;
 }
 aside > nav {
-  position: relative;
   padding-left: 35px;
 }
 
@@ -2635,6 +2634,7 @@ input.w-100, textarea.w-100, select.w-100 {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  overflow: hidden;
 }
 
 .inner-cont {
