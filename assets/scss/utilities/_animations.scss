@@ -12,8 +12,7 @@
 @keyframes bat-central-move {
     from {
         transform: translate(-50%, 0);
-    }
-    to {
+    } to {
         transform: translate(-50%, calc-val(30));
     }
 }
@@ -36,14 +35,6 @@
     100% {top: calc-val(30); right: 0; transform: translateX(0);}
 }
 
-// Header logo rotate
-@keyframes logo-rotate {
-    0% {transform: rotate(0deg);}
-    25%  {transform: rotate(-60deg);}
-    50%  {transform: rotate(60deg);}
-    100% {transform: rotate(-360deg);}
-}
-
 
 // Header notification icon animation
 @keyframes hdr-notification {
@@ -58,9 +49,7 @@
 @keyframes user-info-transform {
     from {
         transform: translateY(-100%);
-    } 
-    
-    to {
+    } to {
         transform: translateY(0);
     }
 }

@@ -101,20 +101,6 @@
     transform: translateX(0);
   }
 }
-@keyframes logo-rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-60deg);
-  }
-  50% {
-    transform: rotate(60deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
 @keyframes hdr-notification {
   0% {
     transform: rotate(5deg);
@@ -411,7 +397,6 @@ header {
 
 .logo {
   max-width: 160px;
-  animation: logo-rotate 10s infinite forwards;
 }
 
 .nav-btn {
