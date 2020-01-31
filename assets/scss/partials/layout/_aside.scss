@@ -17,6 +17,7 @@ aside {
     text-transform: capitalize;
     font-family: $font-secondary;
     color: $color-text-primary;
+    z-index: $z-index-max;
     & > li {
         padding-bottom: 30px;
         & > a {

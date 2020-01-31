@@ -444,6 +444,7 @@ aside > nav {
   text-transform: capitalize;
   font-family: "Worksans-semibold", serif;
   color: #1E272E;
+  z-index: 100;
 }
 .nav-list > li {
   padding-bottom: 30px;
